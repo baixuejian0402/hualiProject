@@ -1,0 +1,27 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+ul{
+    list-style:none;
+}
+ul li{
+    float:left;
+}
+.login_wrapper{
+    height:488px;
+    background:#ffd7c4 url('../images/login_bg.jpg') no-repeat 50% 0;
+}
+.login_wrapper::before{
+    content:'';
+    display:table;
+}
+.login_box{
+    width:420px;
+    height:408px;
+    background:#fff;
+    margin-left:650px;
+    margin-top:40px;
+    padding:20px;
+}
