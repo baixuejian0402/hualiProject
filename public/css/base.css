@@ -3,3 +3,18 @@
   padding:0;
   box-sizing:border-box;
 }
+body{
+  font-size:14px;
+  color:#737373;
+  font-family: tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+ul{
+  list-style:none;
+}
+a{
+  color:#737373;
+  text-decoration:none;
+}
+a:hover{
+  color:#ff6a00;
+}

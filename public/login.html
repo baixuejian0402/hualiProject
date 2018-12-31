@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>会员登录—花礼网</title>
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
@@ -18,17 +19,29 @@
                     <a href="#">注册</a>
                 </li>
             </ul>
-            <a href="#">使用手机号码登录</a><br>
-            <input type="text" id="uname" placeholder="E-mail地址/手机号"><br>
-            <input type="password" id="upwd" placeholder="用户密码"><br>
-            <a href="#">忘记密码</a><br>
-            <button id="btn">登录</button><br>
+            <div class="phone_login">
+                <a href="#">使用手机验证码登录</a>
+            </div>
+            <div class="input_box">
+                <span class="ico_user"></span>
+                <input type="text" id="uname" placeholder="E-mail地址/手机号">
+            </div>
+            <div class="input_box">
+                <span class="ico_lock"></span>
+                <input type="password" id="upwd" placeholder="用户密码">
+            </div>
+            <div class="for_pwd">
+                <a href="#">忘记密码？</a>
+            </div>
+            <button id="btn">登&nbsp;&nbsp;&nbsp;录</button>
             <ul>
                 <li>
-                    <a href="#">微信</a>|
+                    <a href="#">微信</a>
+                    <span>|</span>
                 </li>
                 <li>
-                    <a href="#">QQ</a>|
+                    <a href="#">QQ</a>
+                    <span>|</span>
                 </li>
                 <li>
                     <a href="#">支付宝</a>
