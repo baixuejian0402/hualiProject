@@ -71,6 +71,7 @@ div.input_box .ico_lock{
 }
 .for_pwd a{
     margin-top:10px;
+    margin-bottom:10px;
 }
 #btn{
     display:block;
