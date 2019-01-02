@@ -1,5 +1,5 @@
 SET NAMES UTF8;
-DROP DATABASE IF EXISTS xh;
+DROP DATABASE IF EXISTS huali;
 CREATE  DATABASE huali CHARSET=UTF8;
 USE huali;
 
@@ -16,6 +16,13 @@ CREATE TABLE huali_user{
   gender BOOLEAN             #性别  0-女  1-男
 };
 
+/*用户信息*/
+INSERT INTO huali_user VALUES
+  (NULL, 'dingding', '123456', 'ding123@163.com', '13538352152', 'img/avatar/default.png', '丁伟', '1'),
+  (NULL, 'tom', '234355', 'tom123@163.com', '13259003428', 'img/avatar/default.png', '唐慕', '1'),
+  (NULL, 'jerry', '323455667', 'jerry456@163.com', '18710834178', 'img/avatar/default.png', '翟瑞', '1'),
+  (NULL, 'yaya', '124362345', 'ya0402@163.com', '15991673540', 'img/avatar/default.png', '秦小雅', '0');
+
 /**2.首页轮播广告商品表**/
 CREATE TABLE huali_index_carousel(
   cid INT PRIMARY KEY AUTO_INCREMENT,
@@ -23,11 +30,29 @@ CREATE TABLE huali_index_carousel(
   title VARCHAR(64),
 );
 
+/**首页轮播广告商品表**/
+INSERT INTO huali_index_carousel VALUES
+(NULL,'image/1.jpg','浪漫生日礼'),
+(NULL,'image/1.jpg','睿智摩羯座'),
+(NULL,'image/1.jpg','设计师臻选'),
+(NULL,'image/1.jpg','圣诞之夜'),
+(NULL,'image/1.jpg','鲜花礼品行业龙头奖');
+
 /**3.商品导购表**/
 CREATE TABLE huali_pro_shopping_guide(
   gid INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(64)
 );
+
+/**商品导购**/
+INSERT INTO huali_pro_shopping_guide VALUES
+  (NULL,'images/1.jpg','鲜花用途'),
+  (NULL,'images/1.jpg','鲜花材料'),
+  (NULL,'images/1.jpg','鲜花类别'),
+  (NULL,'images/1.jpg','永生花'),
+  (NULL,'images/1.jpg','礼品'),
+  (NULL,'images/1.jpg','公仔'),
+  (NULL,'images/1.jpg','绿植');
 
 /**4.商品导购分类关联表**/
 CREATE TABLE huali_pro_classify(
@@ -36,6 +61,32 @@ CREATE TABLE huali_pro_classify(
   img VARCHAR(128),
   guide_id INT
 );
+
+/**商品导购分类关联**/
+INSERT INTO huali_pro_classify VALUES
+(NULL,'爱情鲜花','',1),
+(NULL,'生日鲜花','',1),
+(NULL,'友情鲜花','',1),
+(NULL,'问候长辈','',1),
+(NULL,'探病慰问','',1),
+(NULL,'道歉鲜花','',1),
+(NULL,'祝贺鲜花','',1),
+(NULL,'婚庆鲜花','',1),
+(NULL,'商务鲜花','',1),
+(NULL,'玫瑰','',2),
+(NULL,'康乃馨','',2),
+(NULL,'郁金香','',2),
+(NULL,'百合','',2),
+(NULL,'扶郎','',2),
+(NULL,'马蹄莲','',2),
+(NULL,'向日葵','',2),
+(NULL,'花束','',3),
+(NULL,'花盒','',3),
+(NULL,'瓶花','',3),
+(NULL,'精品鲜花','',3),
+(NULL,'果篮','',3),
+(NULL,'桌面花篮','',3),
+(NULL,'开业花篮','',3);
 
 /**5.首页商品栏目表**/
 CREATE TABLE huali_index_product(
