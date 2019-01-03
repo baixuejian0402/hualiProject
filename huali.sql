@@ -1,10 +1,10 @@
 SET NAMES UTF8;
 DROP DATABASE IF EXISTS huali;
-CREATE  DATABASE huali CHARSET=UTF8;
+CREATE DATABASE huali CHARSET=UTF8;
 USE huali;
 
 /**1.用户信息列表**/
-CREATE TABLE huali_user{
+CREATE TABLE huali_user(
   uid INT PRIMARY KEY AUTO_INCREMENT,
   uname VARCHAR(32),
   upwd VARCHAR(32),
@@ -14,7 +14,7 @@ CREATE TABLE huali_user{
   avatar VARCHAR(128),       #头像图片路径
   user_name VARCHAR(16),
   gender BOOLEAN             #性别  0-女  1-男
-};
+);
 
 /*用户信息*/
 INSERT INTO huali_user VALUES
@@ -27,7 +27,7 @@ INSERT INTO huali_user VALUES
 CREATE TABLE huali_index_carousel(
   cid INT PRIMARY KEY AUTO_INCREMENT,
   src VARCHAR(128),
-  title VARCHAR(64),
+  title VARCHAR(64)
 );
 
 /**首页轮播广告商品表**/
@@ -160,7 +160,7 @@ CREATE TABLE huali_order_detail(
   did INT PRIMARY KEY AUTO_INCREMENT,
   order_id INT,           #订单编号
   product_id INT,         #产品编号
-  buy_count INT,          #购买数量
+  buy_count INT           #购买数量
 );
 
 /**10.导航条目**/
