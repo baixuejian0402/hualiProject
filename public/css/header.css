@@ -29,7 +29,7 @@
 }
 .top>div{
     float:left;
-    margin-top:20px;
+    margin-top:30px;
 }
 .logo{
     width:500px;
@@ -64,4 +64,31 @@
 }
 .help_block>a{
     color:#999;
+}
+div.service{
+    float:right;
+    padding-top:5px;
+}
+.service span{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background:#fff url('../images/common_z.png') no-repeat;
+    vertical-align:middle;
+    margin-right:6px;
+}
+.service a{
+    font-size: 12px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #d9d9d9;
+}
+.service a:hover{
+    text-decoration:underline;
+}
+span.ico_phone{
+    background-position:-380px -48px;
+}
+span.ico_online{
+    background-position:-295px -131px;
 }
