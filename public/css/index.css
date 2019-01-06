@@ -1,3 +1,39 @@
 iframe.head,iframe.foot{
     width:100%;
 }
+iframe.head{
+    height:183px;
+}
+div.carousel{
+    min-width:1200px;
+    height:440px;
+    margin:0 auto 30px;
+}
+div.carousel_inner{
+    width:1349px;
+    overflow:hidden;
+}
+div.container{
+    width:1200px;
+    margin:0 auto;
+}
+div.top_server{
+    padding-bottom:50px;
+}
+div.top_server>ul{
+    display:flex;
+    justify-content:space-around;
+}
+div.time_limit{
+    height:200px;
+    margin-bottom:40px;
+}
+div.time_limit .title{
+    width:232px;
+    height:200px;
+    line-height:200px;
+    text-align:center;
+    font-size: 24px;
+    color:#fff;
+    background-color:#aacc03;
+}

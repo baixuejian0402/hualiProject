@@ -112,10 +112,7 @@ CREATE TABLE huali_index_product(
   pic VARCHAR(128),
   title VARCHAR(64),
   price DECIMAL(10,2),
-  href VARCHAR(128),
-  seq_recommended TINYINT,
-  seq_new_arrival TINYINT,
-  seq_top_sale TINYINT
+  href VARCHAR(128)
 );
 
 /**6.鲜花表--记载所有商品的信息**/
