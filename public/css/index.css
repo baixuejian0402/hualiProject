@@ -27,6 +27,16 @@ div.top_server>ul{
 div.time_limit{
     height:200px;
     margin-bottom:40px;
+    display:flex;
+    justify-content:space-around;
+}
+ul.product_list{
+    display:flex;
+    justify-content:space-around;
+}
+ul.product_list>li{
+    margin-right:-1px;
+    border:1px solid #e5e5e5;
 }
 div.time_limit .title{
     width:232px;
@@ -36,4 +46,9 @@ div.time_limit .title{
     font-size: 24px;
     color:#fff;
     background-color:#aacc03;
+}
+div.floor{
+    height:676px;
+    border:1px solid #e5e5e5;
+    margin-bottom:40px;
 }
