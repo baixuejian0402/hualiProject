@@ -38,14 +38,34 @@ ul.product_list>li{
     margin-right:-1px;
     border:1px solid #e5e5e5;
 }
-div.time_limit .title{
+div.time_limit>.title{
     width:232px;
-    height:200px;
-    line-height:200px;
     text-align:center;
     font-size: 24px;
     color:#fff;
     background-color:#aacc03;
+}
+div.time_limit>.comic_choose{
+    width:249px;
+    overflow:hidden;
+    text-align:center;
+    margin-left:1px;
+}
+.ico{
+    display:block;
+    margin: 40px auto 25px;
+    background:transparent url('../images/common_z.png') no-repeat;
+}
+div.time_limit>.title>.ico_clock{
+    width:64px;
+    height:64px;
+    background-position: 0px 0px;
+}
+div.comic_choose img{
+    transition:1s linear;
+}
+div.comic_choose img:hover{
+    transform:scale(1.05);
 }
 div.floor{
     height:676px;
