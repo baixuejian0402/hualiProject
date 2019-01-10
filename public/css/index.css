@@ -9,9 +9,21 @@ div.carousel{
     height:440px;
     margin:0 auto 30px;
 }
-div.carousel_inner{
+ul.carousel_inner{
     width:1349px;
-    overflow:hidden;
+    position:relative;
+}
+ul.carousel_inner>li{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+ul.carousel_inner>li>a>img{
+    opacity:0;
+    transition:all .5s linear;
+}
+ul.carousel_inner>li>a>img.show{
+    opacity:1;
 }
 div.container{
     width:1200px;
