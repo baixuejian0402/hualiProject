@@ -18,11 +18,11 @@ ul.carousel_inner>li{
     top:0px;
     left:0px;
 }
-ul.carousel_inner>li>a>img{
+ul.carousel_inner>li{
     opacity:0;
     transition:all .5s linear;
 }
-ul.carousel_inner>li>a>img.show{
+ul.carousel_inner>li.show{
     opacity:1;
 }
 div.container{
@@ -35,6 +35,33 @@ div.top_server{
 div.top_server>ul{
     display:flex;
     justify-content:space-around;
+}
+.ico{
+    display:inline-block;
+    background:transparent url('../images/common_z.png') no-repeat;
+}
+.ico_server_1,.ico_server_2,.ico_server_3,.ico_server_4,.ico_server_5{
+    width:40px;
+    height:40px;
+    float:left;
+}
+div.top_server>ul>li>a h4,p{
+    margin-left:50px;
+}
+.ico_server_1{
+    background-position:-245px -100px;
+}
+.ico_server_2{
+    background-position:-244px -50px;
+}
+.ico_server_3{
+    background-position:-244px -0px;
+}
+.ico_server_4{
+    background-position:-150px -184px;
+}
+.ico_server_5{
+    background-position:-102px -184px;
 }
 div.time_limit{
     height:200px;
@@ -63,14 +90,10 @@ div.time_limit>.comic_choose{
     text-align:center;
     margin-left:1px;
 }
-.ico{
-    display:block;
-    margin: 40px auto 25px;
-    background:transparent url('../images/common_z.png') no-repeat;
-}
-div.time_limit>.title>.ico_clock{
+.ico_clock{
     width:64px;
     height:64px;
+    margin: 40px auto 25px;
     background-position: 0px 0px;
 }
 div.comic_choose img{
