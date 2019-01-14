@@ -17,35 +17,42 @@
     <!--轮播图-->
     <div class="carousel">
         <!--轮播图片-->
-        <ul class="carousel_inner">
-            <li class="show">
+        <ul class="carousel-inner">
+            <li  id="banner1" class="active">
                 <a href="javascript:;">
                     <img src="images/18_xmas_pc.png">
                 </a>
             </li>
-            <li>
+            <li id="banner2">
                 <a href="javascript:;">
                     <img src="images/18_birthday_pc.jpg">
                 </a>
             </li>
-            <li>
+            <li id="banner3">
                 <a href="javascript:;">
                     <img src="images/17_sheshou_pc.jpg">
                 </a>
             </li>
-            <li>
+            <li id="banner4">
                 <a href="javascript:;">
                     <img src="images/cszq_banner.jpg">
                 </a>
             </li>
-            <li>
+            <li id="banner5">
                 <a href="javascript:;">
                     <img src="images/longtou.jpg">
                 </a>
             </li>
         </ul>
-        <!--左右切换符-->
-        <!--原点指示符-->
+        <!--导航指示符-->
+        <ul class="carousel-indicators">
+            <li data-target="#banner1"></li>
+            <li data-target="#banner2"></li>
+            <li data-target="#banner3"></li>
+            <li data-target="#banner4"></li>
+            <li data-target="#banner5"></li>
+        </ul>
+        <!--左右箭头-->
     </div>
     <!--内容-->
     <div class="container">

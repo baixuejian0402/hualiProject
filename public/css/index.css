@@ -5,25 +5,38 @@ iframe.head{
     height:183px;
 }
 div.carousel{
-    min-width:1200px;
     height:440px;
     margin:0 auto 30px;
 }
-ul.carousel_inner{
+ul.carousel-inner{
     width:1349px;
+    height:440px;
     position:relative;
 }
-ul.carousel_inner>li{
+ul.carousel-inner>li{
     position:absolute;
     top:0px;
     left:0px;
 }
-ul.carousel_inner>li{
+ul.carousel-inner>li{
     opacity:0;
     transition:all .5s linear;
 }
-ul.carousel_inner>li.show{
+ul.carousel-inner>li.active{
     opacity:1;
+}
+ul.carousel-indicators{
+    position:absolute;
+    bottom:10px;
+    left:50%;
+}
+ul.carousel-indicators>li{
+    float:left;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:#aaa;
+    margin-right:5px;
 }
 div.container{
     width:1200px;

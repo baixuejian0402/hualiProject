@@ -2,12 +2,12 @@
 //定义函数
 var ul=document.body.children[1].children[0];
 function task(){
-  var li=ul.querySelector("li.show");
+  var li=ul.querySelector("li.active");
   li.className="";
   if(li.nextElementSibling!=null){
-    li.nextElementSibling.className="show";
+    li.nextElementSibling.className="active";
   }else 
-  ul.children[0].className="show"; 
+  ul.children[0].className="active"; 
 }
 //启动定时器
 var n=setInterval(task,3000);
@@ -17,4 +17,24 @@ ul.onmouseover=function(){
 }
 ul.onmouseout=function(){
   n=setInterval(task,3000);
+}
+var cis=ul.nextElementSibling.children;
+for(var cir of cis){
+  cir.onmouseover=function(){
+    clearInterval(n);
+    var cir=this;
+    cir.style.cursor="pointer";
+    cir.style.background="#FF6A00";
+    var lis=ul.children;
+    for(var li of lis){
+      li.className="";
+    }
+    var id=cir.getAttribute("data-target");
+    var li=document.querySelector(id);
+    li.className="active";
+  }
+  cir.onmouseout=function(){
+    var cir=this;
+    cir.style.background="#aaa";
+  }
 }
