@@ -59,7 +59,7 @@ CREATE TABLE huali_pro_classify(
   cid INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(64),
   img VARCHAR(128),
-  guide_id INT
+  gid INT
 );
 
 /**商品导购分类关联**/
@@ -115,6 +115,8 @@ CREATE TABLE huali_index_product(
   href VARCHAR(128)
 );
 
+/**首页商品栏目表**/
+
 /**6.鲜花表--记载所有商品的信息**/
 CREATE TABLE huali_flower(
   fid INT PRIMARY KEY AUTO_INCREMENT,
@@ -137,7 +139,7 @@ CREATE TABLE huali_flower(
 /**7.鲜花详情图表--记载商品的缩放图中的素材路径**/
 CREATE TABLE huali_flower_pic(
   pid INT PRIMARY KEY AUTO_INCREMENT,
-  flower_id INT,              #鲜花编号
+  fid INT,              #鲜花编号
   sm VARCHAR(128),            #小图片路径
   md VARCHAR(128),            #中图片路径
   lg VARCHAR(128)             #大图片路径

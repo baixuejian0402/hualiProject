@@ -7,11 +7,11 @@ iframe.head{
 div.carousel{
     height:440px;
     margin:0 auto 30px;
+    position:relative;
 }
 ul.carousel-inner{
     width:1349px;
     height:440px;
-    position:relative;
 }
 ul.carousel-inner>li{
     position:absolute;
@@ -58,7 +58,7 @@ div.top_server>ul{
     height:40px;
     float:left;
 }
-div.top_server>ul>li>a h4,p{
+div.top_server>ul>li>a :not(span){
     margin-left:50px;
 }
 .ico_server_1{
@@ -117,6 +117,71 @@ div.comic_choose img:hover{
 }
 div.floor{
     height:676px;
-    border:1px solid #e5e5e5;
+    border:0px solid #e5e5e5;
     margin-bottom:40px;
+}
+div.floor>.hd{
+    margin:0 10px 15px;
+}
+div.floor>.hd>a{
+    float:right;
+}
+.floor>.hd h3 a{
+    font-size:20px;
+}
+.floor>.hd h3 span{
+    font-size:14px;
+    margin-left:20px;
+}
+div.floor>.bd::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.floor>.bd>.bd_l{
+    float:left;
+    width: 243px;
+    height: 639px;
+}
+.f1>.bd>.bd_l{
+    background:#ffc0bb;
+}
+.f2>.bd>.bd_l{
+    background:#c2acd1;
+}
+.f3>.bd>.bd_l{
+    background:#d6d8ec;
+}
+.f4>.bd>.bd_l{
+    background:#ffcd8d;
+}
+.floor>.bd .banner-link{
+    font-size: 18px;
+    line-height: 48px;
+    display: block;
+    width: 194px;
+    height: 52px;
+    margin: 70px auto;
+    text-align: center;
+    color:#fff;
+    border:2px solid #eee;
+}
+.floor>.bd>.floor-products{
+    float:right;
+    width:957px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.floor>.bd>.floor-products>li{
+    width:240px;
+    height:320px;
+    margin-right:-1px;
+    margin-bottom:-1px;
+    padding-top:10px;
+    text-align:center;
+    border:1px solid #e5e5e5;
+}
+.floor>.bd>.floor-products>li img{
+    width:220px;
+    height:240px;
 }
