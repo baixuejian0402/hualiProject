@@ -5,12 +5,12 @@ iframe.head{
     height:183px;
 }
 .carousel{
+    width:1200px;
     height:440px;
     margin:0 auto 30px;
     position:relative;
 }
 .carousel>.carousel-inner{
-    width:1349px;
     height:440px;
 }
 .carousel>.carousel-inner>li{
@@ -21,22 +21,52 @@ iframe.head{
 .carousel>.carousel-inner>li{
     opacity:0;
     transition:all .5s linear;
+    text-align:center;
 }
 .carousel>.carousel-inner>li.active{
     opacity:1;
 }
+.carousel>.carousel-inner>li img{
+    width:1200px;
+    height:440px;
+}
 .carousel>.carousel-indicators{
     position:absolute;
     bottom:10px;
-    left:50%;
+    left:550px;
 }
 .carousel>.carousel-indicators>li{
     float:left;
     width:15px;
     height:15px;
     border-radius:50%;
-    background:#aaa;
+    background:#7F686B;
     margin-right:5px;
+}
+.carousel>.left{
+    position:absolute;
+    left:220px;
+    top:206px;
+}
+.carousel>.right{
+    position:absolute;
+    right:220px;
+    top:206px;
+}
+.carousel>.left:hover,.carousel>.right:hover{
+    opacity:0.8;
+}
+.carousel>.right-box{
+    position:absolute;
+    right:3px;
+    top:6px;
+}
+.carousel>.right-box>li{
+    width:210px;
+    height:141px;
+}
+.carousel>.right-box>li{
+    border-bottom:1px solid #e4e4e4;
 }
 .container{
     width:1200px;
