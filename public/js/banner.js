@@ -35,6 +35,6 @@ for(var cir of cis){
   }
   cir.onmouseout=function(){
     var cir=this;
-    cir.style.background="#aaa";
+    cir.style.background="#7F686B";
   }
 }

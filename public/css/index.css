@@ -2,7 +2,10 @@ iframe.head,iframe.foot{
     width:100%;
 }
 iframe.head{
-    height:183px;
+    height:186px;
+}
+iframe.foot{
+    height:255px;
 }
 .carousel{
     width:1200px;
@@ -169,6 +172,7 @@ iframe.head{
     clear:both;
 }
 .floor>.bd>.bd_l{
+    position:relative;
     float:left;
     width: 243px;
     height: 639px;
@@ -182,19 +186,34 @@ iframe.head{
 .f3>.bd>.bd_l{
     background:#d6d8ec;
 }
-.f4>.bd>.bd_l{
-    background:#ffcd8d;
-}
 .floor>.bd .banner-link{
-    font-size: 18px;
-    line-height: 48px;
-    display: block;
-    width: 194px;
-    height: 52px;
-    margin: 70px auto;
-    text-align: center;
+    font-size:18px;
+    line-height:48px;
+    display:block;
+    width:194px;
+    height:52px;
+    margin:70px auto;
+    text-align:center;
     color:#fff;
-    border:2px solid #eee;
+    border:2px solid #fff;
+}
+.f4>.bd>.bd_l{
+    border:1px solid #dcdcdc;
+    border-right:0;
+}
+.f4>.bd>.bd_l .banner-link{
+    width:225px;
+    height:64px;
+    line-height:64px;
+    background:#ffcd8d;
+    border:0;
+    position:absolute;
+    top:177px;
+    left:9px;
+}
+.f4>.bd>.bd_l h4{
+    margin:15px 12px;
+    color:#ff6a00;  
 }
 .floor>.bd>.floor-products{
     float:right;
