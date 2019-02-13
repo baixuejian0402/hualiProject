@@ -85,10 +85,13 @@ iframe.foot{
 .ico{
     display:inline-block;
     background:transparent url('../images/common_z.png') no-repeat;
+    vertical-align: middle;
 }
-.ico_server_1,.ico_server_2,.ico_server_3,.ico_server_4,.ico_server_5{
+.ico_server_1,.ico_server_2,.ico_server_3,.ico_server_4,.ico_server_5,.ico-server-f1,.ico-server-f2,.ico-server-f3,.ico-server-f4,.ico-server-f5,.ico-server-f6,.ico-server-f7,.ico-server-f8{
     width:40px;
     height:40px;
+}
+.ico_server_1,.ico_server_2,.ico_server_3,.ico_server_4,.ico_server_5{
     float:left;
 }
 .container>.top_server>ul>li>a :not(span){
@@ -233,4 +236,55 @@ iframe.foot{
 .floor>.bd>.floor-products>li img{
     width:220px;
     height:240px;
+}
+.app-wx{
+    margin-bottom:15px;
+    padding-top:15px;
+    border:1px solid #e5e5e5;
+    display:flex;
+    justify-content:space-around;
+}
+.footer-server{
+    height:84px;
+    margin-bottom:30px;
+    padding:22px 0;
+    background-color:#f60;
+}
+.footer-server ul{
+    display:flex;
+    justify-content:space-around;
+}
+.footer-server ul li{
+    line-height:40px;
+    padding:0 15px;
+}
+.footer-server ul li+li{
+    border-left:1px solid #aaa;
+}
+.footer-server ul li a {
+    color:#fff;
+}
+.footer-server .ico-server-f1{
+    background-position:-51px -188px;
+}
+.footer-server .ico-server-f2{
+    background-position:0px -186px;
+}
+.footer-server .ico-server-f3{
+    background-position:-194px -102px;
+}
+.footer-server .ico-server-f4{
+    background-position:-194px -52px;
+}
+.footer-server .ico-server-f5{
+    background-position:-194px -2px;
+}
+.footer-server .ico-server-f6{
+    background-position:-100px -136px;
+}
+.footer-server .ico-server-f7{
+    background-position:-50px -136px;
+}
+.footer-server .ico-server-f8{
+    background-position:0px -136px;
 }
