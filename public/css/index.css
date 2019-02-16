@@ -218,6 +218,24 @@ iframe.foot{
     margin:15px 12px;
     color:#ff6a00;  
 }
+.f4>.bd>.bd_l ul{
+    margin:0px 12px;
+    font-size:12px;
+}
+.f4>.bd>.bd_l ul::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.f4>.bd>.bd_l .line{
+    margin:15px 12px;
+    border-top:1px solid #d9d9d9;
+
+}
+.f4>.bd>.bd_l>ul li{
+    line-height:24px;
+    float:left;
+}
 .floor>.bd>.floor-products{
     float:right;
     width:957px;
@@ -237,12 +255,115 @@ iframe.foot{
     width:220px;
     height:240px;
 }
+/*面板*/
+.panel-wrapper{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:15px;
+}
+.panel-wrapper>.new1{
+    width:240px;
+}
+.panel-wrapper>.comments{
+    width:470px;
+}
+.panel-wrapper .comments .bd{
+    padding:20px 15px;
+}
+.comments .bd .comment-item{
+    padding:10px 0;
+}
+.ico-rating{
+    height:16px;
+    background-position:0px -352px;
+}
+.r3{
+    width:42px;
+}
+.r5{
+    width:70px;
+}
+.panel-wrapper>.news{
+    width:460px;
+}
+.panel-wrapper>.news>.bd>ul{
+    float:left;
+}
+.panel-wrapper>.news>.bd>ul+ul{
+    border-left:1px solid #e5e5e5;
+}
+.gray-panel .hd{
+    height:32px;
+    padding:7px 10px;
+    background-color:#898989;
+    display:flex;
+    justify-content:space-between;
+}
+.gray-panel .bd{
+    padding-top:10px;
+    height:260px;
+    background-color:#f2f2f2;
+}
+.gray-panel .bd ul{
+    padding:8px;
+    list-style:disc inside;
+}
+.gray-panel .bd ul li{
+    line-height:35px;
+    font-size:12px;
+}
+.gray-panel .hd h4{
+    color:#fff;
+}
+.ico-plus{
+    width:16px;
+    height:16px;
+    background-position:-390px -318px;
+}
+/*app+微信*/
 .app-wx{
     margin-bottom:15px;
-    padding-top:15px;
     border:1px solid #e5e5e5;
     display:flex;
     justify-content:space-around;
+}
+.app-wx .intro{
+    float:left;
+}
+.app-wx>.app-download,.weixin{
+    padding:20px 0px 20px 10px;
+}
+.app-wx>.app-download>img,.weixin>img{
+    float:left;
+    margin-right:15px;
+}
+.app-wx .intro h4{
+    font-weight: bold;
+    margin-bottom:10px;
+    color: #ff6a00;
+}
+.app-wx .intro p{
+    margin-bottom:10px;
+    font-size:12px;
+}
+.ico-apple,.ico-android{
+    width:50px;
+    height:50px;
+}
+.ico-apple{
+    background-position:-134px 0px;
+}
+.ico-android{
+    background-position:-60px -74px;
+}
+.app-wx>.cartoon img{
+    display:block;
+    margin-top:12px;
+}
+.ico-weixin-app{
+    width:48px;
+    height:48px;
+    background-position:-134px -60px;
 }
 .footer-server{
     height:84px;
