@@ -18,6 +18,23 @@
 .top_nav>.nav .nav_left{
     float:left;
 }
+.nav_left .dropdown-wx{
+    text-align:center;
+    padding-top:20px;
+}
+.dropdown-menu{
+    font-size:12px;
+    padding:10px;
+    border:1px solid #d9d9d9;
+    background:#fff;
+    position:absolute;
+}
+.dropdown-wx p{
+    height:20px;
+}
+.dropdown-wx p+p{
+    margin-bottom:10px;
+}
 .top_nav>.nav .nav_right{
     float:right;
 }
@@ -26,6 +43,19 @@
 }
 .nav a{
     padding:0 8px;
+}
+.dropdown-service{
+    width:80px;
+    padding:7px;
+}
+.triangle-bottom{
+    border:6px solid transparent;
+    border-top-color:#d9d9d9;
+    position:relative;
+    top:12px;
+}
+.top_nav>.nav  .nav_right .dropdown-service>li{
+    line-height:24px;
 }
 .ico{
     display:inline-block;

@@ -1,3 +1,12 @@
+#top{
+    min-width:1200px;
+    margin:0 auto;
+}
+#top span{
+    display:block;
+    height:80px;
+    background:url('../images/pc_newuser_order.png') no-repeat 50%;
+}
 iframe.head,iframe.foot{
     width:100%;
 }
@@ -7,6 +16,7 @@ iframe.head{
 iframe.foot{
     height:255px;
 }
+/*轮播图*/
 .carousel{
     width:1200px;
     height:440px;
@@ -71,6 +81,7 @@ iframe.foot{
 .carousel>.right-box>li{
     border-bottom:1px solid #e4e4e4;
 }
+/*主体内容*/
 .container{
     width:1200px;
     margin:0 auto;
@@ -255,6 +266,25 @@ iframe.foot{
     width:220px;
     height:240px;
 }
+/*楼层滚动*/
+.layout{
+    position:fixed;
+    top:40%;
+    width:100px;
+    background:#d9d9d9;
+    margin-left:-85px;
+    z-index:999;
+    padding:10px;
+}
+.layout li{
+    padding:0px 5px;
+    line-height:40px;
+    height:40px;
+    text-align:center; 
+}
+.layout li+li{
+    border-top:1px solid #f4f4f4;
+}
 /*面板*/
 .panel-wrapper{
     display:flex;
@@ -272,6 +302,36 @@ iframe.foot{
 }
 .comments .bd .comment-item{
     padding:10px 0;
+    font-size:12px;
+}
+.comments .bd>dl+dl{
+    border-top:1px solid #e5e5e5;
+}
+.comment-item::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.comments dt{
+    float:left;
+}
+.comments dt img{
+     display:block;
+     width:37px;
+     height:38px;
+     padding:4px;
+     margin:0px 5px;
+     background-color:#fff;
+     border:1px solid #ddd;
+     border-radius:4px;
+}
+.comments dd{
+    margin-left:75px;
+    display:flex;
+    justify-content:space-between;
+}
+.comments .comment-item dd>div:first-child>div{
+    margin-bottom:10px;
 }
 .ico-rating{
     height:16px;
