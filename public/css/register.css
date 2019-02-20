@@ -3,7 +3,7 @@ ul li{
 }
 .login_wrapper{
     height:488px;
-    background:#ffd7c4 url('../images/login_bg.jpg') no-repeat 50% 0;
+    background:#ffd7c4 url('../img/login/login_bg.jpg') no-repeat 50% 0;
 }
 .login_wrapper::before{
     content:'';

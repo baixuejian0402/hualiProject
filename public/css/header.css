@@ -61,7 +61,7 @@
 .ico{
     display:inline-block;
     vertical-align: middle;
-    background:transparent url('../images/common_z.png') no-repeat;
+    background:transparent url('../img/common_z.png') no-repeat;
 }
 .ico_star,.ico_weixin,.ico_mobile,.ico_cart{
     width:24px;
@@ -80,7 +80,7 @@
 .ico_cart{
     background-position:-340px -284px;
 }
-.top>div{
+.top>div:not(:last-child){
     float:left;
     margin-top:30px;
 }
@@ -127,6 +127,7 @@
 .service{
     float:right;
     padding-top:5px;
+    margin-top:30px;
 }
 .ico_online,.ico_phone{
     width:30px;

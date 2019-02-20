@@ -3,7 +3,7 @@ ul li{
 }
 .login_wrapper{
     height:488px;
-    background:#ffd7c4 url('../images/login_bg.jpg') no-repeat 50% 0;
+    background:#ffd7c4 url('../img/login/login_bg.jpg') no-repeat 50% 0;
 }
 .login_wrapper::before{
     content:'';
@@ -62,11 +62,11 @@ div.input_box span{
     left:6px;
 }
 div.input_box .ico_user{
-    background:#eee url('../images/common_z.png') no-repeat;
+    background:#eee url('../img/common_z.png') no-repeat;
     background-position:-327px -308px;
 }
 div.input_box .ico_lock{
-    background:#eee url('../images/common_z.png') no-repeat;
+    background:#eee url('../img/common_z.png') no-repeat;
     background-position:-301px -306px;
 }
 .for_pwd a{
