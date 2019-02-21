@@ -22,27 +22,25 @@
         <div class="product-wrapper">
             <div class="product-l">
                 <div class="pro-preview">
-                    <!--大图-->
+                    <!--中图-->
                     <div class="pro-big-img">
-                        <div class="img-item">
-                            <img src="img/product/md/9010877.jpg" alt="" width="430">
-                        </div>
-                        <div class="img-item">
-                            <img src="img/product/md/201708222052257688.jpg" alt="" width="430">
-                        </div>
-                        <div class="img-item">
-                            <img src="img/product/md/201708222052459002.jpg" alt="" width="430">
-                        </div>
-                        <div class="img-item">
-                            <img src="img/product/md/201708222052510728.jpg" alt="" width="430">
-                        </div>
+                        <img src="img/product/md/9010877.jpg">
+                        <!--遮罩层-->
+                        <div id="mask"></div>
+                        <!--保护层-->
+                        <div id="super-mask"></div>
+                        <!--中图-->
+                        <div id="div-lg"></div>
+                        <!--<img src="img/product/md/201708222052257688.jpg" alt="" width="430">
+                        <img src="img/product/md/201708222052459002.jpg" alt="" width="430">
+                        <img src="img/product/md/201708222052510728.jpg" alt="" width="430">-->
                     </div>
                     <!--小图-->
                     <div class="pro-sm-img">
-                        <img src="img/product/sm/9010877.jpg_80x87.jpg" alt="">
-                        <img src="img/product/sm/201708222052257688.jpg_80x87.jpg" alt="">
-                        <img src="img/product/sm/201708222052459002.jpg_80x87.jpg" alt="">
-                        <img src="img/product/sm/201708222052510728.jpg_80x87.jpg" alt="">
+                        <img src="img/product/sm/9010877.jpg" data-md="img/product/md/9010877.jpg" data-lg="img/product/lg/9010877.jpg">
+                        <img src="img/product/sm/201708222052257688.jpg" data-md="img/product/md/201708222052257688.jpg" data-lg="img/product/lg/201708222052257688.jpg">
+                        <img src="img/product/sm/201708222052459002.jpg" data-md="img/product/md/201708222052459002.jpg" data-lg="img/product/lg/201708222052459002.jpg">
+                        <img src="img/product/sm/201708222052510728.jpg" data-md="img/product/md/201708222052510728.jpg" data-lg="img/product/lg/201708222052510728.jpg">
                     </div>
                 </div>
             </div>
@@ -108,5 +106,7 @@
             </div>
         </div>
     </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/details.js"></script>
 </body>
 </html>

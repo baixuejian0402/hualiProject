@@ -20,20 +20,48 @@
     width:520px;
 }
 .pro-preview{
-    position:relative;
     width:450px;
     margin:0 auto;
     border:1px solid red;
+    text-align:center;
 }
 .pro-preview .pro-big-img{
+    position:relative;
     overflow:hidden;
-    width:430px;
-    height:469px;
-    margin:0 auto 20px;
-    padding-top:15px;
+    width:360px;
+    height:360px;
+    margin:20px auto;
+    border:1px solid #eee;
 }
-.img-item{
+.pro-big-img>img{
+    width:360px;
+}
+#mask{
+    width:176px; 
+    height:176px;
+    background-color:#ffa;
+    opacity:.5;
     position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+#super-mask{
+    width:360px; 
+    height:360px;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+#div-lg{
+    width:580px;
+    height:580px;
+    position:absolute;
+    left:360px;
+    top:0px;
+    z-index:10000;
+    border:1px solid red;
+    background-image:url('../img/product/lg/9010877.jpg');
 }
 .pro-preview .pro-sm-img{
     width:430px;

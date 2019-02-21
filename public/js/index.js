@@ -1,6 +1,6 @@
 //循环播放一组图片
 //定义函数
-var ul=document.body.children[2].children[0];
+var ul=document.querySelector(".carousel>ul");
 function task(){
   var li=ul.querySelector("li.active");
   li.className="";
