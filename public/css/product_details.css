@@ -22,19 +22,18 @@
 .pro-preview{
     width:450px;
     margin:0 auto;
-    border:1px solid red;
     text-align:center;
 }
 .pro-preview .pro-big-img{
     position:relative;
-    overflow:hidden;
-    width:360px;
-    height:360px;
+    width:400px;
+    height:400px;
     margin:20px auto;
-    border:1px solid #eee;
+    border:1px solid #ccc;
 }
 .pro-big-img>img{
-    width:360px;
+    width:400px;
+    height:400px;
 }
 #mask{
     width:176px; 
@@ -47,8 +46,8 @@
     display:none;
 }
 #super-mask{
-    width:360px; 
-    height:360px;
+    width:400px; 
+    height:400px;
     position:absolute;
     top:0px;
     left:0px;
@@ -57,14 +56,15 @@
     width:580px;
     height:580px;
     position:absolute;
-    left:360px;
+    left:400px;
     top:0px;
+    border:1px solid #ccc;
+    display:none;
     z-index:10000;
-    border:1px solid red;
-    background-image:url('../img/product/lg/9010877.jpg');
+    background:url('../img/product/lg/9010877.jpg') no-repeat;
 }
 .pro-preview .pro-sm-img{
-    width:430px;
+    width:420px;
     margin:0 auto;
     display:flex;
     justify-content:space-around;
@@ -81,5 +81,34 @@
 .product-wrapper .product-r{
     float:left;
     width:560px;
-    border:1px solid red;
+}
+.product-r .p-title{
+    font-size:16px;
+    padding-bottom:20px;
+    margin-bottom:20px;
+    border-bottom:1px solid #d9d9d9;
+
+}
+.product-r .p-title .title{
+    color: #4d4d4d;
+    margin-bottom:6px;
+}
+.product-r .p-title .subtitle{
+    color:#ff6a00;
+}
+.product-r .attribute p{
+    font-size:12px;
+    margin:12px 0;
+}
+.product-r .attribute{
+    margin-bottom:15px;
+    padding-bottom:15px;
+    border-bottom:1px solid #d9d9d9;
+}
+.product-r .attribute p span:first-child{
+    float:left;
+}
+.product-r .attribute p span:last-child{
+    display:block;
+    margin-left:70px;
 }

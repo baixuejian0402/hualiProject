@@ -18,7 +18,7 @@ ul.onmouseover=function(){
 ul.onmouseout=function(){
   n=setInterval(task,3000);
 }
-var cis=ul.nextElementSibling.children;
+var cis=ul.nextElementSibling.children[0].children;
 for(var cir of cis){
   cir.onmouseover=function(){
     clearInterval(n);

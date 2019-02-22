@@ -32,20 +32,21 @@ $(function(){
     )
     //为superMask绑定鼠标移动事件
     .mousemove(function(e){
+      $(this).css("cursor","pointer");
       var offsetX=e.offsetX;
       var offsetY=e.offsetY;
       var top=offsetY-176/2;
       var left=offsetX-176/2;
       //如果top或left<0,就拉回0
-      //如果top或left>184,就拉回184
-      if(top<0) top=0; else if(top>184) top=184
+      //如果top或left>224,就拉回224
+      if(top<0) top=0; else if(top>224) top=224
       if(left<0) left=0;
-      else if(left>184) left=184;
+      else if(left>224) left=224;
       $mask.css({top,left});
       //让lgDiv的背景图片位置跟随top和left移动
       $lgDiv.css(
         "background-position",
-        `-${75/36*left}px -${75/36*top}px`
+        `-${0.7*left}px -${top}px`
       )
     })
 })
