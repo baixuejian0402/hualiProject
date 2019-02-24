@@ -100,6 +100,9 @@
     font-size:12px;
     margin:12px 0;
 }
+.product-r .attribute p:last-child{
+    margin:12px 0 30px;
+}
 .product-r .attribute{
     margin-bottom:15px;
     padding-bottom:15px;
@@ -111,4 +114,75 @@
 .product-r .attribute p span:last-child{
     display:block;
     margin-left:70px;
+}
+.product-r .app-zx ul{
+    background:#f7f7f7;
+    height:42px;
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-around;
+    font-size:12px;
+}
+.product-r .app-zx ul li{
+    line-height:42px;
+}
+.product-r .app-zx ul>li:first-child>:last-child{
+    color:#ff6a00;
+    font-weight:bolder;
+}
+.product-r .app-zx ul li img{
+    vertical-align:middle;
+}
+.ico-wx{
+    width:24px;
+    height:24px;
+    background-position:-285px -343px;
+}
+.ico-cart-white{
+    width:24px;
+    height:24px;
+    background-position:-306px -284px;
+}
+.ico-heart{
+    width:16px;
+    height:16px;
+    background-position:-286px -318px;
+}
+.product-r .btn-buy a:first-child{
+    display:inline-block;
+    padding:8px 25px;
+    margin-right:20px;
+    font-size:18px;
+    color:#fff;
+    background:#ff6a00;
+}
+.wrapper>div{
+    float:left;
+}
+.wrapper .info-left{
+    width:230px;
+    height:900px;
+}
+.wrapper .info-right{
+    width:970px;
+    height:900px;
+    border:1px solid #ebebeb;
+}
+.info-left .panel{
+    margin-bottom:20px;
+}
+.panel .panel-head{
+    padding:8px 0;
+    color:#737373;
+    background:#ffe8d9;
+    border:1px solid #ebebeb;
+    text-align:center;
+}
+.panel .panel-body{
+    padding:10px 9px;
+    border:1px solid #ebebeb;
+}
+.panel-body>.side-item>.img-box img{
+    width:180px;
+    height:196px;
 }
