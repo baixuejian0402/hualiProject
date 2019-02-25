@@ -160,12 +160,13 @@
     float:left;
 }
 .wrapper .info-left{
-    width:230px;
+    width:210px;
     height:900px;
 }
 .wrapper .info-right{
     width:970px;
     border:1px solid #ebebeb;
+    margin-left:20px;
 }
 .info-left .panel{
     margin-bottom:20px;
