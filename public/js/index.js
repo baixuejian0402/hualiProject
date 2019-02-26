@@ -49,15 +49,15 @@ $("a").on("click",function(e){
 var floor=$(".container>.floor");
 var winH=$(window).height();
 var li=$(".layout").find("li");
-$(window).scroll(function(){
+$(window).on("scroll",function(){
   var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
-  console.log(scrollTop);
+  //console.log(scrollTop);
   floor.each(function(){
-    if(scrollTop>=floor.first().offset().top-winH/2 &&scrollTop<=floor.last().offset().top-winH/2){
+    if(scrollTop>=floor.first().offset().top-winH/2 &&scrollTop<=floor.last().offset().top-winH/2+floor.last().height()){
       if(scrollTop>=$(this).offset().top-winH/2){
         $(".layout").addClass("show");
         li.removeClass("scroll");
-        li.eq($(this).index()-1).addClass("scroll");
+        li.eq($(this).index()-2).addClass("scroll");
       }
     }else{
       $(".layout").removeClass("show");
