@@ -156,6 +156,7 @@
     color:#fff;
     background:#ff6a00;
 }
+/* 商品详情 */
 .wrapper>div{
     float:left;
 }
@@ -165,7 +166,6 @@
 }
 .wrapper .info-right{
     width:970px;
-    border:1px solid #ebebeb;
     margin-left:20px;
 }
 .info-left .panel{
@@ -203,9 +203,98 @@
     color:#ff6a00;
     font-weight:bolder;
 }
-.info-right .details{
+.info-right .tabs-panel{
     text-align:center;
-    margin-top:40px;
+    margin-bottom:25px;
+    padding:20px;
+    border:1px solid #dbdbdb;
+    font-size:12px;
+}
+.info-right .tabs{
+    width:970px;
+}
+.info-right .tabs::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.info-right .tabs .tabs-item{
+    float:left;
+}
+.tabs-item a{
+    display:block;
+    padding:8px 25px;
+    border: 1px solid #dbdbdb;
+    border-bottom: 1px solid #707070;
+}
+/* 用户评价 */
+dl::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+dd,dt{
+    float:left;
+    display:flex;
+    flex-direction:column;
+}
+dd .hd{
+    display:flex;
+    justify-content:space-between;
+}
+#Comment .comment-ft a{
+    color:#ff6a00;
+}
+/* 服务保障 */
+#Server .tab-indicators{
+    margin-top:10px;
+    display:flex;
+    justify-content:space-around;
+}
+.p-ico{
+    display:inline-block;
+    background:transparent url('../img/product/details/server_z.png') no-repeat;
+    vertical-align: middle;
+    width:60px;
+    height:60px;
+}
+.ico-server01{
+    background-position:0 0;
+}
+.ico-server02{
+    background-position:-60px 0;
+}
+.ico-server03{
+    background-position:-120px 0;
+}
+.ico-server04{
+    background-position:-180px 0;
+}
+.ico-server05{
+    background-position:-240px 0;
+}
+.ico-server06{
+    background-position:-300px 0;
+}
+.p-ico:hover{
+    background-position-y:-60px;
+}
+#Server .tab-content{
+    height:350px;
+    width:910px;
+    margin:30px auto 20px;
+    position:relative;
+}
+.tab-content>div{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.tab-content>.tab-pane{
+    display:none;
+}
+.tab-content>.active{
+    display:block;
 }
 /* 咨询客服 */
 .c-service{

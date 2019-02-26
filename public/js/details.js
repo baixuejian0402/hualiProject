@@ -49,4 +49,9 @@ $(function(){
         `-${0.7*left}px -${top}px`
       )
     })
+    // 购物保障图片切换
+    $("#Server>.tab-indicators").on("mouseover","li",function(){
+      var id=$(this).attr("data-target");
+      $(id).addClass("active").siblings().removeClass("active");
+    })
 })
