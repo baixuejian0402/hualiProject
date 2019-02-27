@@ -1,9 +1,21 @@
+iframe.head,iframe.foot{
+    width:100%;
+}
+iframe.head{
+    height:123px;
+}
+iframe.foot{
+    height:255px;
+}
 .container{
     width:1200px;
     margin:20px auto;
 }
 .breadcrumbs{
     margin-bottom:10px; 
+}
+.text-primary{
+    color:#ff6a00;
 }
 .product-wrapper{
     padding:30px;
@@ -82,6 +94,7 @@
     float:left;
     width:560px;
 }
+/* 标题 */
 .product-r .p-title{
     font-size:16px;
     padding-bottom:20px;
@@ -96,6 +109,7 @@
 .product-r .p-title .subtitle{
     color:#ff6a00;
 }
+/* 属性 */
 .product-r .attribute p{
     font-size:12px;
     margin:12px 0;
@@ -115,6 +129,55 @@
     display:block;
     margin-left:70px;
 }
+/* 不同种类价格 */
+.product-r .price-wrap{
+    font-size:12px;
+    margin-bottom:20px;
+}
+.product-r .price-wrap>a{
+    margin:0 10px;
+}
+.product-r .price-wrap .price{
+    border:2px solid #d9d9d9;
+    cursor: pointer;
+    padding:0 6px;
+    display:inline-block;
+    position: relative;
+}
+.product-r .price-wrap>a:first-child>div{
+    border:2px solid #ff6a00;
+}
+.product-r .price-wrap .price:hover{
+    border:2px solid #ff6a00;
+}
+.product-r .price-wrap .price>img{
+    height:40px;
+    vertical-align:middle;
+}
+.ico-check{
+    width:20px;
+    height:20px;
+    background-position:-100px -318px;
+    position: absolute;
+    bottom:0;
+    right:0;
+    z-index:2;
+    display:none;
+}
+.show{
+    display:inline-block !important;
+}
+.product-r>.price{
+    padding:20px;
+}
+.product-r .price-original{
+    text-decoration:line-through;
+}
+.product-r .price-sell strong{
+    font-size:18px;
+    color:#ff6a00;
+}
+/* app微信专享价 */
 .product-r .app-zx ul{
     background:#f7f7f7;
     height:42px;
@@ -203,6 +266,7 @@
     color:#ff6a00;
     font-weight:bolder;
 }
+/* 商品详情 */
 .info-right .tabs-panel{
     text-align:center;
     margin-bottom:25px;
@@ -263,8 +327,20 @@ dd .hd{
     padding:0 10px 8px 20px;
     border-bottom:1px solid #d9d9d9;
 }
-dd .hd span:first-child span{
+dd .hd>span:first-child{
+    position: relative;
+}
+dd .hd>span:first-child span:first-child{
+    color:#e2e2e2;
+    position: absolute;
+    top:0;
+    left:60px;
+}
+dd .hd>span:first-child span:last-child{
     color:#F8B502;
+    position: absolute;
+    top:0;
+    left:60px;
 }
 dd .bd{
     text-align:left;
