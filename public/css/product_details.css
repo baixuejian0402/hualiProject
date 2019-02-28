@@ -7,6 +7,38 @@ iframe.head{
 iframe.foot{
     height:255px;
 }
+/* 导航栏 */
+.common{
+    height:40px;
+    margin:20px auto 10px;
+    min-width: 1200px;
+    background-color: #fe7a24;
+}
+.common .guid-shopping{
+    position:relative;
+    float:left;
+    line-height:40px;
+    width:230px;
+    background:#ff6a00;
+}
+.common .nav{
+    font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+    margin-left:230px;
+    font-size:15px;
+}
+.common .nav li{
+    float:left;
+    line-height:40px;
+}
+.common .nav li a,.common .guid-shopping h3 a{
+    font-weight:bold;
+    color:#fff;
+    padding:9px 24px;
+}
+.common .nav li a:hover{
+    background:#f83;
+}
+/* 内容 */
 .container{
     width:1200px;
     margin:20px auto;
@@ -73,7 +105,7 @@ iframe.foot{
     border:1px solid #ccc;
     display:none;
     z-index:10000;
-    background:url('../img/product/lg/9010877.jpg') no-repeat;
+    background:url('../img/product_details/lg/9010877.jpg') no-repeat;
 }
 .pro-preview .pro-sm-img{
     width:420px;
@@ -357,7 +389,7 @@ dd .bd{
 }
 .p-ico{
     display:inline-block;
-    background:transparent url('../img/product/details/server_z.png') no-repeat;
+    background:transparent url('../img/product_details/details/server_z.png') no-repeat;
     vertical-align: middle;
     width:60px;
     height:60px;
@@ -421,7 +453,7 @@ dd .bd{
 .c-service .ico-chat{
     width:20px;
     height:20px;
-    background:#ff6a00 url("../img/product/details/icon-mq.png") no-repeat;
+    background:#ff6a00 url("../img/product_details/details/icon-mq.png") no-repeat;
     background-position:0 0;
     vertical-align:middle;
     margin-left:14px;
