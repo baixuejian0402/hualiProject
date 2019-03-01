@@ -23,3 +23,8 @@ a:hover{
   background:transparent url('../img/common_z.png') no-repeat;
   vertical-align: middle;
 }
+/* 下三角 */
+.triangle-bottom{
+  border:6px solid transparent;
+  border-top-color:#d9d9d9;
+}

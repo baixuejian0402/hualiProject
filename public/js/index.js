@@ -1,20 +1,26 @@
 $(function(){
-  $(".cate-ysh").hover(
-    function(){
-      $(".cate-ysh .right-menu").addClass("show");
-    },
-    function(){
-      $(".cate-ysh .right-menu").removeClass("show");
-    }
-  );
-  $(".cate-cake").hover(
-    function(){
-      $(".cate-cake .right-menu").addClass("show");
-    },
-    function(){
-      $(".cate-cake .right-menu").removeClass("show");
-    }
-  );
+  //导航栏右出
+  $(".right-menu").hide();
+  $(".cate-ysh>a").parent().mouseover(function(){
+    $(".cate-ysh>a").next().show();
+  })
+  .mouseout(function(){
+    $(".cate-ysh>a").next().hide();
+  });
+  $(".cate-cake>.gift").parent().mouseover(function(){
+    $(".cate-cake>.gift").next().show();
+  })
+  .mouseout(function(){
+    $(".cate-cake>.gift").next().hide();
+  })
+  // $(".cate-cake").hover(
+  //   function(){
+  //     $(".cate-cake .right-menu").addClass("show");
+  //   },
+  //   function(){
+  //     $(".cate-cake .right-menu").removeClass("show");
+  //   }
+  // );
   $("a").on("click",function(e){
     e.preventDefault();
   })

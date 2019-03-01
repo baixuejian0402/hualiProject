@@ -49,9 +49,7 @@
     width:80px;
     padding:7px;
 }
-.triangle-bottom{
-    border:6px solid transparent;
-    border-top-color:#d9d9d9;
+.nav_right .triangle-bottom{
     position:relative;
     top:12px;
 }

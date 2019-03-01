@@ -2,3 +2,89 @@
     width:1200px;
     margin:0 auto;
 }
+.filterbar{
+    width:970px;
+    height:32px;
+    background:#ebebeb;
+}
+.filterbar .filter{
+    display:flex;
+    align-items:center;
+}
+.filterbar .filter>li{
+    padding:0 5px;
+    margin:0 8px;
+}
+.filterbar .triangle-bottom{
+    position:relative;
+    bottom:5px;
+    left:30px;
+}
+/* 商品列表 */
+.grid-wrapper{
+    width:970px;
+}
+.grid-item{
+    margin-bottom:20px;
+    padding:10px;
+    float:left;
+}
+.grid-item::before{
+    content:"";
+    display:table;
+}
+.grid-item:hover{
+    border:1px solid #ccc
+}
+.grid-item>.img-box{
+    margin-bottom:10px;
+}
+.grid-item>.img-box img{
+    width:220px;
+    height:240px;
+}
+.grid-item>.info-cont{
+    font-size:14px;
+}
+.info-cont .price{
+    margin-bottom:8px;
+    color:#ff6a00;
+    font-weight:bold;
+}
+.info-cont .title{
+    margin-bottom:10px;
+}
+.info-cont .title>a{
+    color:#737373;
+    font-size:12px;
+}
+.info-cont .title .p-title{
+    display:block;
+    overflow:hidden;
+    max-width:220px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.info-cont .title .feature{
+    color:#ff6a00;
+}
+.ico-cart-d,.ico-heart-d{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    vertical-align:middle;
+}
+.ico-cart-d{
+    background-image:url("../img/product/ico_cart_d.png");
+}
+.ico-heart-d{
+    background-image:url("../img/product/ico_heart_d.png");
+}
+.info-cont .operate>a{
+    display:inline-block;
+    width:107px;
+    padding:4px 0;
+    text-align:center;
+    border:1px solid #d9d9d9;
+    color:#888;
+}
