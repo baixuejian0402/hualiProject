@@ -22,6 +22,9 @@
     text-align:center;
     padding-top:20px;
 }
+.dropdown:hover{
+    background:#fff;
+}
 .dropdown-menu{
     font-size:12px;
     padding:10px;

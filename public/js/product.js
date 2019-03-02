@@ -1,0 +1,10 @@
+$(function(){
+    $(".dropdown-menu").hide();
+    //导航栏下拉
+    $(".guid-shopping>h3").parent().mouseover(function(){
+        $(".guid-shopping>h3").next().show();
+    })
+    .mouseout(function(){
+        $(".guid-shopping>h3").next().hide();
+    })
+})

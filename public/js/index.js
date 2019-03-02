@@ -1,26 +1,16 @@
 $(function(){
   //导航栏右出
   $(".right-menu").hide();
-  $(".cate-ysh>a").parent().mouseover(function(){
-    $(".cate-ysh>a").next().show();
-  })
-  .mouseout(function(){
-    $(".cate-ysh>a").next().hide();
-  });
-  $(".cate-cake>.gift").parent().mouseover(function(){
-    $(".cate-cake>.gift").next().show();
-  })
-  .mouseout(function(){
-    $(".cate-cake>.gift").next().hide();
-  })
-  // $(".cate-cake").hover(
-  //   function(){
-  //     $(".cate-cake .right-menu").addClass("show");
-  //   },
-  //   function(){
-  //     $(".cate-cake .right-menu").removeClass("show");
-  //   }
-  // );
+  $(".cate-ysh").hover(
+    function(){
+      $(".cate-ysh>a").next().toggle("show");
+    }
+  );
+  $(".cate-cake").hover(
+    function(){
+      $(".cate-cake>.gift").next().toggle("show");
+    }
+  );
   $("a").on("click",function(e){
     e.preventDefault();
   })

@@ -87,6 +87,21 @@ iframe.foot{
 }
 .cate-cake,.cate-ysh{
     position:relative;
+    margin:-9px -15px 0;
+    padding:9px 15px 0;
+}
+.cate-ysh{
+    border-bottom:1px solid #e9e9e9;
+}
+.cate-ysh>a>img{
+    vertical-align:middle;
+    position: relative;
+    left:135px;
+}
+.cate-cake>.gift img{
+    vertical-align:middle;
+    position: relative;
+    left:58px;
 }
 .dropdown-cate .cate-cake>a,.cate-ysh>a{
     color:#ff6a00;
@@ -102,7 +117,7 @@ iframe.foot{
 }
 .right-menu{
     position:absolute;
-    left:216px;
+    left:230px;
     width:730px;
     background:#fff;
     padding:10px;
@@ -114,11 +129,8 @@ iframe.foot{
     margin:5px 0px;
 }
 .cate-ysh .right-menu{
-    top:-63px;
+    top:-55px;
     height:210px;
-}
-.show{
-    display:block !important;
 }
 .right-menu .link-img::after{
     content:"";
@@ -140,7 +152,7 @@ iframe.foot{
 }
 .cate-cake .right-menu{
     height:440px;
-    top:-361px;
+    top:-353px;
 }
 /*轮播图*/
 .carousel{

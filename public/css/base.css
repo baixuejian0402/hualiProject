@@ -26,5 +26,50 @@ a:hover{
 /* 下三角 */
 .triangle-bottom{
   border:6px solid transparent;
-  border-top-color:#d9d9d9;
+  border-top-color:#999;
+}
+.show{
+  display:block !important;
+}
+/* 引入头部和尾部 */
+iframe.head,iframe.foot{
+  width:100%;
+}
+iframe.head{
+  height:123px;
+}
+iframe.foot{
+  height:255px;
+}
+/* 商品详情 商品列表 面板样式 */
+.panel .panel-head{
+  padding:8px 0;
+  color:#737373;
+  background:#ffe8d9;
+  border:1px solid #ebebeb;
+}
+.panel .panel-body{
+  padding:10px 9px;
+  border:1px solid #ebebeb;
+}
+.panel-body>.side-item>.img-box img{
+  width:180px;
+  height:196px;
+  padding:8px;
+}
+.side-item{
+  margin-bottom:5px;
+  padding-top:5px;
+}
+.side-item+.side-item{
+  border-top:1px solid #d9d9d9;
+}
+.side-item .info-cont div{
+  margin-bottom:8px;
+  font-size:12px;
+}
+.side-item .info-cont .price{
+  text-align:center;
+  color:#ff6a00;
+  font-weight:bolder;
 }

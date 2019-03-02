@@ -1,12 +1,3 @@
-iframe.head,iframe.foot{
-    width:100%;
-}
-iframe.head{
-    height:123px;
-}
-iframe.foot{
-    height:255px;
-}
 /* 导航栏 */
 .common{
     height:40px;
@@ -24,6 +15,11 @@ iframe.foot{
     height:40px;
     display:flex;
     align-items:center;
+}
+.common .guid-shopping>h3 img{
+    vertical-align:middle;
+    position: relative;
+    left:65px;
 }
 .common .nav{
     font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
@@ -303,37 +299,6 @@ iframe.foot{
     margin-bottom:20px;
     text-align:center;
 }
-.panel .panel-head{
-    padding:8px 0;
-    color:#737373;
-    background:#ffe8d9;
-    border:1px solid #ebebeb;
-}
-.panel .panel-body{
-    padding:10px 9px;
-    border:1px solid #ebebeb;
-}
-.panel-body>.side-item>.img-box img{
-    width:180px;
-    height:196px;
-    padding:8px;
-}
-.side-item{
-    margin-bottom:5px;
-    padding-top:5px;
-}
-.side-item+.side-item{
-    border-top:1px solid #d9d9d9;
-}
-.side-item .info-cont div{
-    margin-bottom:8px;
-    font-size:12px;
-}
-.side-item .info-cont .price{
-    text-align:center;
-    color:#ff6a00;
-    font-weight:bolder;
-}
 /* 商品详情 */
 .info-right .tabs-panel{
     text-align:center;
@@ -465,9 +430,9 @@ dd .bd{
 .tab-content>.tab-pane{
     display:none;
 }
-/* .tab-content>.active{
+.tab-content>.active{
     display:block;
-} */
+}
 /* 咨询客服 */
 .c-service{
     position:fixed;
