@@ -250,13 +250,13 @@
     position:absolute;
     top:50%;
     margin-top:-24px;
-    background:#999;
+    background:#bbb;
     display:inline-block;
     padding:10px 2px;
     border-radius:3px;
 }
 .carousel>a:hover{
-    background:#aaa;
+    background:#999;
 }
 .left{
     left:5px;

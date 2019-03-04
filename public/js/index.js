@@ -3,12 +3,18 @@ $(function(){
   $(".right-menu").hide();
   $(".cate-ysh").hover(
     function(){
-      $(".cate-ysh>a").next().toggle("show");
+      $(".cate-ysh>a").next().addClass("show");
+    },
+    function(){
+      $(".cate-ysh>a").next().removeClass("show");
     }
   );
   $(".cate-cake").hover(
     function(){
-      $(".cate-cake>.gift").next().toggle("show");
+      $(".cate-cake>.gift").next().addClass("show");
+    },
+    function(){
+      $(".cate-cake>.gift").next().removeClass("show");
     }
   );
   $("a").on("click",function(e){
@@ -53,11 +59,11 @@ $(function(){
   $(window).on("scroll",function(){
     var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
     //console.log(scrollTop);
-    floor.each(function(){
+    floor.each(function(i,elem){
       if(scrollTop>=floor.first().offset().top-winH/2 &&scrollTop<=floor.last().offset().top-winH/2+floor.last().height()){
-        if(scrollTop>=$(this).offset().top-winH/2){
+        if(scrollTop>=$(elem).offset().top-winH/2){
           $(".layout").addClass("show");
-          li.eq($(this).index()-2).addClass("scroll").siblings().removeClass("scroll");
+          li.eq($(elem).index()-2).addClass("scroll").siblings().removeClass("scroll");
         } 
       }else{
         $(".layout").removeClass("show");
@@ -72,40 +78,6 @@ $(function(){
   })
   
   // 轮播图
-  //循环播放一组图片
-  //定义函数
-  //var $ul=$(".carousel>.carousel-inner");
-  // function task(){
-  //   var $li=$ul.children(".active");
-  //   $ul.children().addClass("");
-  //   if($li.next()!=null){
-  //     $li.next().addClass("active");
-  //   }else{
-  //     $ul.children(":first").addClass("active");
-  //   } 
-  // }
-  // //启动定时器
-  // var n=setInterval(task,3000);
-  // //清除定时器
-  // $(".carousel").on("mouseover",function(){
-  //   clearInterval(n);
-  // })
-  // $(".carousel").on("mouseout",function(){
-  //   n=setInterval(task,3000);
-  // })
-  // $(".carousel-indicators").on("mouseenter","li",function(){
-  //   clearInterval(n);
-  //   $(".carousel>.carousel-inner>li").addClass(" ");
-  //   var $id=$(this).css({
-  //     cursor:"pointer",
-  //     background:"#FF6A00"
-  //   }).attr("data-target");
-  //   $ul.children($id).addClass("active");
-  // })
-  // $(".carousel-indicators").on("mouseleave","li",function(){
-  //   $(this).css("background","#7F686B");
-  // })
-  
   //循环播放一组图片
   //定义函数
   var ul=document.querySelector(".carousel>ul");

@@ -31,8 +31,32 @@ $(function(){
             .siblings().removeClass("active");
         },
         function(){
+            var i=$(this).index();
             setInterval(loop(i,i+1),3000);
         }
     )
     //给左右箭头绑定点击事件
+    $(".carousel>a").click(function(e){
+        //清除定时器
+        clearInterval(timer);
+        e.preventDefault();
+        var i=$(".carousel-inner>div.active").index();//获取当前图片
+        if($(this).hasClass("left")){
+            i--;
+            if(i<0) i=2;
+            task(i);
+        }else{
+            i++;
+            if(i>2) i=0;
+            task(i);
+        }
+        //3s后恢复定时器
+        setInterval(loop(i,i+1),3000);
+    })
+    function task(i){
+        $(".carousel-indicators>li").eq(i).addClass("current")
+        .siblings().removeClass("current");
+        $(".carousel-inner>div").eq(i).addClass("active")
+        .siblings().removeClass("active");
+    }
 })

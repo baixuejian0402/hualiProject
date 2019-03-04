@@ -32,6 +32,7 @@
     background:#fff;
     position:absolute;
     display:none;
+    z-index:1000;
 }
 .dropdown-wx p{
     height:20px;
