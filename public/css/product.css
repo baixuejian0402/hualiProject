@@ -297,13 +297,14 @@
     margin-bottom:20px;
     padding:10px;
     float:left;
+    border:1px solid transparent;
 }
 .grid-item::before{
     content:"";
     display:table;
 }
 .grid-item:hover{
-    border:1px solid #ccc
+    border-color:#ddd;
 }
 .grid-item>.img-box{
     margin-bottom:10px;

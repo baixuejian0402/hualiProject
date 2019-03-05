@@ -78,38 +78,53 @@ $(function(){
   })
   
   // 轮播图
-  //循环播放一组图片
-  //定义函数
-  var ul=document.querySelector(".carousel>ul");
-  function task(){
-    var li=ul.querySelector("li.active");
-    li.className="";
-    if(li.nextElementSibling!=null){
-      li.nextElementSibling.className="active";
-    }else 
-      ul.children[0].className="active"; 
+  var i=0,timer;
+  var length=$(".carousel-inner>li").length-1;
+  //使用定时器循环播放一组图片
+  function loop(i,next){
+    timer=setInterval(()=>{
+      if(i>=length){next=0;i=-1}
+      $(".carousel-inner>li").eq(next).addClass("active").siblings().removeClass("active");
+      $(".carousel-indicators>li").eq(next).addClass("current").siblings().removeClass("current");
+      i=next;
+      next++;
+    },3000)
   }
-  //启动定时器
-  var n=setInterval(task,3000);
-  //清除定时器
-  var cis=ul.nextElementSibling.children[0].children;
-  for(var cir of cis){
-    cir.onmouseover=function(){
-      clearInterval(n);
-      var cir=this;
-      cir.style.cursor="pointer";
-      cir.style.background="#FF6A00";
-      var lis=ul.children;
-      for(var li of lis){
-        li.className="";
-      }
-      var id=cir.getAttribute("data-target");
-      var li=document.querySelector(id);
-      li.className="active";
+  loop(i,i+1);
+  //为指示符绑定事件
+  $(".carousel-indicators>li").hover(
+    function(){
+        var i=$(this).index();
+        clearInterval(timer);
+        task(i);
+    },
+    function(){
+        var i=$(this).index();
+        setInterval(loop(i,i+1),3000);
     }
-    cir.onmouseout=function(){
-      var cir=this;
-      cir.style.background="#7F686B";
+  )
+  //为左右箭头绑定点击事件
+  $(".carousel>.content>a").click(function(e){
+    e.preventDefault();
+    //清除定时器
+    clearInterval(timer);
+    var i=$(".carousel-inner>li.active").index();//获取当前图片
+    if($(this).hasClass("left")){
+        i--;
+        if(i<0) i=length;
+        task(i);
+    }else{
+        i++;
+        if(i>length) i=0;
+        task(i);
     }
+    //3s后恢复定时器
+    setInterval(loop(i,i+1),3000);
+  })
+  function task(i){
+    $(".carousel-indicators>li").eq(i).addClass("current")
+    .siblings().removeClass("current");
+    $(".carousel-inner>li").eq(i).addClass("active")
+    .siblings().removeClass("active");
   }
 })

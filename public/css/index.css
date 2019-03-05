@@ -11,7 +11,7 @@ iframe.head,iframe.foot{
     width:100%;
 }
 iframe.head{
-    height:256px;
+    height:126px;
 }
 iframe.foot{
     height:255px;
@@ -19,7 +19,7 @@ iframe.foot{
 .default{
     min-width:1200px;
     border-bottom:3px solid  #FF6A00;
-    margin-top:-110px;
+    margin-top:20px;
     height:40px;
 }
 .pro_nav{
@@ -161,10 +161,6 @@ iframe.foot{
     margin-bottom:30px;
     position:relative;
 }
-.carousel>.carousel-inner{
-    float:left;
-    margin:0 auto;
-}
 .carousel>.content{
     width:1200px;
     height:440px;
@@ -172,9 +168,12 @@ iframe.foot{
     position:relative;
 }
 .carousel>.carousel-inner>li{
+    width:100%;
     position:absolute;
     top:0px;
-    left:0px;
+    left:50%;
+    margin-left:-50%;
+    z-index:1;
 }
 .carousel>.carousel-inner>li{
     opacity:0;
@@ -199,7 +198,18 @@ iframe.foot{
     height:15px;
     border-radius:50%;
     background:#7F686B;
-    margin-right:5px;
+    margin-right:10px;
+}
+.carousel>.content>.carousel-indicators>li.current{
+    background:#ff6a00;
+    cursor:pointer;
+}
+.carousel>.content>a{
+    background:#888;
+    display:inline-block;
+    padding:10px 2px;
+    border-radius:3px;
+    opacity:0.4;
 }
 .carousel>.content>.left{
     position:absolute;
