@@ -42,6 +42,9 @@ iframe.foot{
   height:255px;
 }
 /* 商品详情 商品列表 面板样式 */
+.panel{
+  margin-bottom:20px;
+}
 .panel .panel-head{
   padding:8px 0;
   color:#737373;
@@ -73,3 +76,38 @@ iframe.foot{
   color:#ff6a00;
   font-weight:bolder;
 }
+/* 客服咨询 */
+.cus-service{
+  background:#ff6a00;
+  width:120px;
+  height:40px;
+}
+.cus-service li{
+  height:40px;
+  float:left;
+  padding:10px;
+  font-weight:bold;
+}
+.cus-service li>a{
+  color:#fff;
+}
+.cus-service>li+li{
+  border-left:2px solid rgba(0, 0, 0, 0.08);
+}
+.ico-service{
+  display:inline-block;
+  vertical-align:middle;
+  width:20px;
+  height:20px;
+  background:url('../img/index/icon-mq.png') no-repeat;
+}
+.foot-service{
+  position:fixed;
+  bottom:0;
+  right:60px;
+}
+.foot-service iframe{
+  width:120px;
+  height:40px;
+}
+/* 客服咨询 End */

@@ -7,15 +7,6 @@
     height:80px;
     background:url('../img/index/pc_newuser_order.png') no-repeat 50%;
 }
-iframe.head,iframe.foot{
-    width:100%;
-}
-iframe.head{
-    height:126px;
-}
-iframe.foot{
-    height:255px;
-}
 .default{
     min-width:1200px;
     border-bottom:3px solid  #FF6A00;
@@ -173,7 +164,6 @@ iframe.foot{
     top:0px;
     left:50%;
     margin-left:-50%;
-    z-index:1;
 }
 .carousel>.carousel-inner>li{
     opacity:0;

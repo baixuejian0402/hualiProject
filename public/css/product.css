@@ -228,7 +228,7 @@
 }
 .carousel-indicators{
     position: absolute;
-    bottom:10px;
+    bottom:15px;
     left:50%;
     margin-left:-44px;
 }
@@ -238,7 +238,7 @@
     border-radius:50%;
     background:#6e6e71;
     float:left;
-    margin-right:8px;
+    margin-right:10px;
 }
 .carousel-indicators>li:hover{
     cursor:pointer;
@@ -292,6 +292,11 @@
 /* 商品列表 */
 .grid-wrapper{
     width:970px;
+}
+.grid-wrapper::after{
+    content:'';
+    display:block;
+    clear:both;
 }
 .grid-item{
     margin-bottom:20px;
@@ -357,6 +362,54 @@
     text-align:center;
     border:1px solid #d9d9d9;
     color:#888;
+    font-size:12px;
+}
+.info-cont .operate>a:last-child{
+    color:#000;
+}
+.info-cont .operate>a:hover{
+    color: #ff6a00;
+    background-color: #fff3eb;
+}
+/* 分页 */
+.page-wrapper{
+    margin:30px 0 40px;
+    padding:20px 10px;
+    border:1px solid #d9d9d9;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.pagination>li{
+    font-weight:300;
+    float:left;
+}
+.pagination>li>a{
+    display:inline-block;
+    padding:6px 12px;
+    border:1px solid #ddd;
+    margin-left:-1px;
+}
+.pagination>li>a:hover{
+    background:#d9d9d9;
+}
+.pagination>.disabled>a{
+    color:#999;
+    background:#fff;
+    border-color:#ddd;
+    cursor:not-allowed;
+}
+.pagination>.disabled>a:hover{
+    background:#fff;
+}
+.pagination>.active>a{
+    color:#fff;
+    background:#ff6a00;
+    border-color:#ff6a00;
+    cursor:default;
+}
+.pagination>.active>a:hover{
+    background:#ff6a00;
 }
 /* 右侧快速导航栏 */
 .quick{
@@ -367,22 +420,23 @@
     width:34px;
     height:100%;
     background:#595656;
-}
-.quick li:hover{
+  }
+  .quick li:hover{
     background:#ff6a00;
-}
-.quick li{
+  }
+  .quick li{
     position:relative;
     top:0;
     left:0;
-}
-.quick .quick-up{
+    margin-top:10px;
+  }
+  .quick .quick-up{
     margin-top:-190px;
     position:absolute;
     top:50%;
     left:0;
-}
-.quick-up .login-box{
+  }
+  .quick-up .login-box{
     width:288px;
     height:200px;
     border-radius:3px 0 0 3px;
@@ -393,46 +447,46 @@
     left:-288px;
     text-align:center;
     display:none;
-}
-.login-box .avatar-box{
+  }
+  .login-box .avatar-box{
     height:160px;
     font-size:12px;
     line-height:24px;
     padding-top:20px;
-}
-.login-box .avatar-box>p{
+  }
+  .login-box .avatar-box>p{
     width:80px;
     height:80px;
     border-radius:50%;
     overflow:hidden;
     margin:0 auto 10px;
-}
-.login-box .avatar-box>a{
+  }
+  .login-box .avatar-box>a{
     color:#ff6a00;
-}
-.login-box .login-btnbox{
+  }
+  .login-box .login-btnbox{
     width:100%;
     height:40px;
     line-height:40px;
     background:#f8f8f8;
     font-size:12px;
-}
-.ico-p{
+  }
+  .ico-p{
     display:inline-block;
     width:36px;
     height:36px;
     vertical-align:middle;
     background:url('../img/product/ibar_sprites.png') no-repeat;
-}
-.ico-arrow-right{
+  }
+  .ico-arrow-right{
     position:absolute;
     top:15px;
     right:-6px;
     width:6px;
     height:9px;
     background-position:0 -302px;
-}
-.tooltip{
+  }
+  .tooltip{
     width:120px;
     height:36px;
     color:#595656;
@@ -444,54 +498,56 @@
     left:-120px;
     box-shadow:0 0 2px rgba(0,0,0,.2);
     line-height:36px;
-}
-.ico-user{
+    display:none;
+  }
+  .ico-user{
     background-position:0 0;
-}
-.ico-order{
+  }
+  .ico-order{
     background-position:-36px -72px;
-}
-.ico-cart{
+  }
+  .ico-cart{
     background-position:0 -36px;
-}
-.ico-num{
+  }
+  .ico-num{
     display:block;
     width:21px;
     height:21px;
-    margin:9px 0 0 8px;
+    margin:9px auto;
     cursor:pointer;
     text-align:center;
     color:#fff;
     border-radius:50%;
-    background:#ff6600;
-}
-.ico-collect{
+    background:#ff6a00;
+    text-align:center;
+  }
+  .ico-collect{
     background-position:0 -72px;
-}
-.ico-history{
+  }
+  .ico-history{
     background-position:0 -108px;
-}
-.ico-phone{
+  }
+  .ico-phone{
     background-position:0 -144px;
-}
-.ico-headset{
+  }
+  .ico-headset{
     background-position:0 -180px;
-}
-.ico-qrcode{
+  }
+  .ico-qrcode{
     background-position:0 -216px;
-}
-.ico-surveys{
+  }
+  .ico-surveys{
     background-position:0 -362px;
-}
-.ico-gotop{
+  }
+  .ico-gotop{
     background-position:0 -252px;
-}
-.quick .quick-down{
+  }
+  .quick .quick-down{
     position:absolute;
     bottom:0;
     left:0;
-}
-.quick-down .qr-code{
+  }
+  .quick-down .qr-code{
     position: absolute;
     top:-162px;
     left:-288px;
@@ -506,8 +562,29 @@
     align-items:center;
     font-weight:bold;
     color:#595656;
-}
-.quick-down .qr-code>div span{
+    display:none;
+  }
+  .quick-down .qr-code>div span{
     margin-top:10px;
     display:block;
-}
+  }
+  .quick-up>li:nth-child(2):hover .ico-num{
+    color:#ff6a00;
+    background:#fff;
+  }
+  .quick-up>li:nth-child(2)>a{
+    width:34px;
+    display:block;
+    color:#fff;
+    margin:10px 0;
+    border:1px solid #d8d8d8;
+    border-left:0;
+    border-right:0;
+  }
+  .quick-up>li:nth-child(2)>a>div{
+    width:16px;
+    line-height:16px;
+    height:48px;
+    margin-left:12px;
+  }
+  /* 右侧快速导航栏 End */
