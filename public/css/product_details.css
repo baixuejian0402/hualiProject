@@ -1,7 +1,7 @@
 /* 导航栏 */
 .common{
     height:40px;
-    margin:20px auto 10px;
+    margin:-180px auto 10px;
     min-width: 1200px;
     background-color: #fe7a24;
 }
@@ -174,11 +174,11 @@
     color:#ff6a00;
 }
 /* 属性 */
-.product-r .attribute p{
+.product-r .attribute>div{
     font-size:12px;
     margin:12px 0;
 }
-.product-r .attribute p:last-child{
+.product-r .attribute>div:last-child{
     margin:12px 0 30px;
 }
 .product-r .attribute{
@@ -186,12 +186,58 @@
     padding-bottom:15px;
     border-bottom:1px solid #d9d9d9;
 }
-.product-r .attribute p span:first-child{
+.product-r .attribute>div>span:first-child{
     float:left;
 }
-.product-r .attribute p span:last-child{
+.product-r .attribute>div>span:last-child{
     display:block;
     margin-left:70px;
+}
+.attribute .arrow{
+    margin-left:10px;
+    display:inline-block;
+    vertical-align:middle;
+    width:13px;
+    height:7px;
+    background:url('../img/product_details/details/arr-close.png');
+}
+.attribute .stock-address{
+    position:relative;
+    margin-left:70px;
+}
+.attribute .head{
+    height:23px;
+    cursor:pointer;
+    border:1px solid transparent;
+}
+.attribute .head>span:first-child{
+    color:#ff6a00;
+    padding-left:10px;
+}
+.attribute .content{
+    position:absolute;
+    top:23px;
+    left:0;
+    width:380px;
+    padding-top:20px;
+    background:#fff;
+    border:1px solid #ccc;
+    z-index:1000;
+}
+.attribute .content .address-select{
+    margin:0 10px;
+    color:#666;
+}
+.address-select .address-list{
+    padding-top:10px;
+}
+.address-select .address-list>ul>li{
+    float:left;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    padding: 2px 10px;
+    background: #fff;
+    color: #005aa0;
 }
 /* 不同种类价格 */
 .product-r .price-wrap{
@@ -325,7 +371,7 @@
     border-bottom: 1px solid #707070;
 }
 /* 用户评价 */
-dl{
+.comment-bd dl{
     margin-bottom:30px;
     padding-bottom:30px;
     border-bottom:2px dotted #d9d9d9;
@@ -339,43 +385,43 @@ dl{
     padding:3px;
     border-radius:2px
 }
-dl::after{
+.comment-bd dl::after{
     content:"";
     display:block;
     clear:both;
 }
-dt{
+.comment-bd dt{
     float:left;
     display:flex;
     flex-direction:column;
     text-align:left;
 }
-dd{
+.comment-bd dd{
     margin-left:150px;
 }
-dd .hd{
+.comment-bd dd .hd{
     display:flex;
     justify-content:space-between;
     margin-bottom:8px;
     padding:0 10px 8px 20px;
     border-bottom:1px solid #d9d9d9;
 }
-dd .hd>span:first-child{
+.comment-bd dd .hd>span:first-child{
     position: relative;
 }
-dd .hd>span:first-child span:first-child{
+.comment-bd dd .hd>span:first-child span:first-child{
     color:#e2e2e2;
     position: absolute;
     top:0;
     left:60px;
 }
-dd .hd>span:first-child span:last-child{
+.comment-bd dd .hd>span:first-child span:last-child{
     color:#F8B502;
     position: absolute;
     top:0;
     left:60px;
 }
-dd .bd{
+.comment-bd dd .bd{
     text-align:left;
     padding-left:36px;
 }

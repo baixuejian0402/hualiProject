@@ -100,7 +100,7 @@ $(function(){
     },
     function(){
         var i=$(this).index();
-        setInterval(loop(i,i+1),3000);
+        loop(i,i+1);
     }
   )
   //为左右箭头绑定点击事件
@@ -111,15 +111,14 @@ $(function(){
     var i=$(".carousel-inner>li.active").index();//获取当前图片
     if($(this).hasClass("left")){
         i--;
-        if(i<0) i=length;
-        task(i);
     }else{
         i++;
-        if(i>length) i=0;
-        task(i);
     }
+    if(i<0) i=length;
+    if(i>length) i=0;
+    task(i);
     //3s后恢复定时器
-    setInterval(loop(i,i+1),3000);
+    loop(i,i+1);
   })
   function task(i){
     $(".carousel-indicators>li").eq(i).addClass("current")
