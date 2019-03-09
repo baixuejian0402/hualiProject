@@ -35,13 +35,8 @@ a:hover{
 iframe.head,iframe.foot{
   width:100%;
 }
-header{
-  height:323px;
-}
 iframe.head{
-  height:323px;
-  position:absolute;
-  z-index:200;
+  height:123px;
 }
 iframe.foot{
   height:255px;
@@ -214,7 +209,7 @@ iframe.foot{
 .ico-cart{
   background-position:0 -36px;
 }
-.ico-num{
+.ico-nums{
   display:block;
   width:21px;
   height:21px;

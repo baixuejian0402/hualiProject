@@ -78,9 +78,16 @@ $(function(){
   })
   
   // 轮播图
+  // 保存变量
   var i=0,timer;
   var length=$(".carousel-inner>li").length-1;
-  //使用定时器循环播放一组图片
+  // 根据图片的数量创建对应数量的指示符
+  for(var i=0;i<=length;i++){
+    var html=$(`<li></li>`);
+    $(".carousel-indicators").append(html);
+  }
+  $(".carousel-indicators>li").eq(0).addClass("current");
+  // 使用定时器循环播放一组图片
   function loop(i,next){
     timer=setInterval(()=>{
       if(i>=length){next=0;i=-1}

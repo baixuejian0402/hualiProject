@@ -226,7 +226,7 @@
                     </div>
                     <div>
                         <span>配 送：</span>
-                        <span>全国 （可配送至全国2000多城市，</span>
+                        <span>全国 （可配送至全国2000多城市，市区免配送费）</span>
                     </div>
                     <div>
                         <span>配 送至：</span>
@@ -243,11 +243,15 @@
                                     <dd>
                                         <div class="address-list">
                                             <ul class="tab">
-                                                <li>西安</li>
+                                                <li class="current">请选择</li>
                                                 <li>请选择</li>
                                                 <li>请选择</li>
                                             </ul>
-                                            <div class="tab-con"></div>
+                                            <div class="tab-con">
+                                                <ul class="item">
+                                                    
+                                                </ul>
+                                            </div>
                                         </div>
                                     </dd>
                                 </dl>
@@ -287,24 +291,37 @@
                             <img src="img/product_details/details/appzx_01.png" alt="">
                             <span>¥145</span>
                         </li>
-                        <li>
+                        <li class="dropdown">
                             <a href="#">
                                 <span class="ico ico-wx"></span>去APP购买
                                 <img src="img/product_details/details/xxjt.png">
                             </a>
+                            <div>
+                                <img src="img/product_details/details/app_qrcode.jpg">
+                            </div>
                         </li>
-                        <li>
+                        <li class="dropdown">
                             <a href="#">
                                 <span class="ico ico-wx"></span>去微信购买
                                 <img src="img/product_details/details/xxjt.png">
                             </a>
+                            <div>
+                                <img src="img/product_details/details/GetWXACode.jpg">
+                            </div>
                         </li>
                     </ul>
                 </div>
+                <!-- 商品数量 -->
+                <div class="p-count">
+                    <button>-</button>
+                    <input type="text" id="count" value="1">
+                    <button>+</button>
+                </div>
                 <!--立即购买-->
                 <div class="btn-buy">
+                    <a href="#">立即购买</a>
                     <a href="#">
-                        <span class="ico ico-cart-white"></span>立即购买
+                        <span class="ico ico-cart-white"></span>加入购物车
                     </a>
                     <a href="#">
                         <span class="ico ico-heart"></span> 收 藏

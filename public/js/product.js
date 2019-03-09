@@ -11,6 +11,12 @@ $(function(){
     //2.1创建定时器，循环播放一组图片
     var i=0,timer;
     var length=$(".carousel-inner>li").length-1;
+    // 根据图片的数量创建对应数量的指示符
+    for(var i=0;i<=length;i++){
+        var li=$(`<li></li>`);
+        $(".carousel-indicators").append(li);
+    }
+    $(".carousel-indicators>li").eq(0).addClass("current");
     function loop(i,next){
         timer=setInterval(()=>{
             if(i>=length){next=0;i=-1;}

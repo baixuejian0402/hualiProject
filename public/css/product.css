@@ -1,7 +1,7 @@
 /* 导航栏 */
 .common{
     height:40px;
-    margin:-180px auto 10px;
+    margin:20px auto 10px;
     min-width: 1200px;
     background-color: #fe7a24;
 }
