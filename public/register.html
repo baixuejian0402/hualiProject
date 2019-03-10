@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
+    <!--导入头部-->
+    <header>
+        <iframe class="head" src="header.html" frameborder="0" scrolling="no"></iframe>
+    </header>
     <div class="login_wrapper">
         <div class="login_box">
             <ul>
@@ -33,9 +37,20 @@
             </div>
             <div class="input_box">
                 <input type="text" id="code" placeholder="验证码">
+                <div id="verificationCode" class="verificationCode">
+                    <canvas width="100" height="40" id="verifyCanvas"></canvas>
+                    <img id="code_img">
+                </div>
+                <a href="javascript:;" class="transform">看不清换一张</a>
             </div>
             <button id="btn">立 即 注 册</button>
         </div>
-    </div>    
+    </div>
+    <!--导入尾部-->
+    <footer>
+        <iframe class="foot" src="footer.html" frameborder="0" scrolling="no"></iframe>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+    <script type="text/javascript" src="js/verificationCode.js" ></script>    
 </body>
 </html>

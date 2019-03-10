@@ -45,6 +45,7 @@ ul li{
     margin-bottom:10px;
 }
 div.input_box{
+    position:relative;
     text-align:center;
 }
 div.input_box input{
@@ -53,6 +54,18 @@ div.input_box input{
     padding:10px;
     border:1px solid #d2d2d2;
     margin-bottom:15px;
+}
+.transform{
+    font-size:14px;
+    color:#ff6a00;
+    text-decoration:underline;
+    position:absolute;
+    right:56px;
+    top:10px;
+}
+#code{
+    width:90px;
+    margin-left:-180px;
 }
 #btn{
     display:block;
@@ -69,4 +82,22 @@ div.input_box input{
 }
 #btn:hover{
     background:#f56600;
+}
+/*验证码*/
+.verificationCode{
+    width:80px;
+    height:40px;
+    position:absolute;
+    top:0;
+    right:148px;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+}
+#code_img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    vertical-align: top;
 }
