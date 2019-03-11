@@ -170,6 +170,9 @@
     transition:all .5s linear;
     text-align:center;
 }
+.carousel>.carousel-inner>li:first-child{
+    opacity:1;
+}
 .carousel>.carousel-inner>li.active{
     opacity:1;
 }

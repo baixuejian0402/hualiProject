@@ -107,11 +107,11 @@ INSERT INTO huali_user VALUES
 
 /**2.首页轮播广告商品表**/
 INSERT INTO huali_index_carousel VALUES
-(NULL,'image/1.jpg','浪漫生日礼'),
-(NULL,'image/2.jpg','睿智摩羯座'),
-(NULL,'image/3.jpg','设计师臻选'),
-(NULL,'image/4.jpg','圣诞之夜'),
-(NULL,'image/5.jpg','鲜花礼品行业龙头奖');
+(NULL,'img/banners/19_valentine_pc.jpg','2.14 情人节'),
+(NULL,'img/banners/18_birthday_pc.jpg','浪漫生日礼'),
+(NULL,'img/banners/17_mjz_pc.jpg','睿智魔蝎座'),
+(NULL,'img/banners/17_spz_pc.jpg','独特水瓶座'),
+(NULL,'img/banners/18_youflower_pc.jpg','设计师臻选');
 
 /**3.商品导购**/
 INSERT INTO huali_pro_shopping_guide VALUES

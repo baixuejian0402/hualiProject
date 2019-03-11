@@ -1,4 +1,80 @@
 $(function(){
+  $.ajax({
+    url:"http://127.0.0.1:3000/banners",
+    type:"get",
+    dataType:"json",//自动JSON.parse()
+    //提前给success赋值一个回调函数
+    //在请求成功后自动执行
+    //参数data可自动获得服务端返回的数据
+    success:function(data){
+      console.log(data);
+      var html="",str="";
+      //循环添加轮播图片片段以及对应的指示符
+      for(var item of data){
+        html+=`<li>
+                  <a href="javascript:;">
+                      <img src="${item.src}">
+                  </a>
+              </li>`;
+        str+=`<li></li>`;
+      }
+      $(".carousel>.carousel-inner").html(html);
+      $(".carousel-indicators").html(str);
+      $(".carousel-indicators>li").eq(0).addClass("current");
+      // 轮播图
+      // 保存变量
+      var i=0,timer;
+      var length=$(".carousel-inner>li").length-1;
+      // 使用定时器循环播放一组图片
+      function loop(i,next){
+        timer=setInterval(()=>{
+          if(i>=length){next=0;i=-1}
+          $(".carousel-inner>li").eq(next).addClass("active").siblings().removeClass("active");
+          $(".carousel-indicators>li").eq(next).addClass("current").siblings().removeClass("current");
+          i=next;
+          next++;
+        },3000)
+      }
+      loop(i,i+1);
+      //为指示符绑定事件
+      $(".carousel-indicators>li").hover(
+        function(){
+            var i=$(this).index();
+            clearInterval(timer);
+            task(i);
+        },
+        function(){
+            var i=$(this).index();
+            loop(i,i+1);
+        }
+      )
+      //为左右箭头绑定点击事件
+      $(".carousel>.content>a").click(function(e){
+        e.preventDefault();
+        //清除定时器
+        clearInterval(timer);
+        var i=$(".carousel-inner>li.active").index();//获取当前图片
+        if($(this).hasClass("left")){
+            i--;
+        }else{
+            i++;
+        }
+        if(i<0) i=length;
+        if(i>length) i=0;
+        task(i);
+        //3s后恢复定时器
+        loop(i,i+1);
+      })
+      function task(i){
+        $(".carousel-indicators>li").eq(i).addClass("current")
+        .siblings().removeClass("current");
+        $(".carousel-inner>li").eq(i).addClass("active")
+        .siblings().removeClass("active");
+      }
+    }
+  })
+
+
   //导航栏右出
   $(".right-menu").hide();
   $(".cate-ysh").hover(
@@ -20,7 +96,6 @@ $(function(){
   $("a").on("click",function(e){
     e.preventDefault();
   })
-  
   // // 滚动楼层
   // var floor=$(".container>.floor");
   // var winH=$(window).height();
@@ -76,61 +151,4 @@ $(function(){
       "scrollTop":t
     },500);
   })
-  
-  // 轮播图
-  // 保存变量
-  var i=0,timer;
-  var length=$(".carousel-inner>li").length-1;
-  // 根据图片的数量创建对应数量的指示符
-  for(var i=0;i<=length;i++){
-    var html=$(`<li></li>`);
-    $(".carousel-indicators").append(html);
-  }
-  $(".carousel-indicators>li").eq(0).addClass("current");
-  // 使用定时器循环播放一组图片
-  function loop(i,next){
-    timer=setInterval(()=>{
-      if(i>=length){next=0;i=-1}
-      $(".carousel-inner>li").eq(next).addClass("active").siblings().removeClass("active");
-      $(".carousel-indicators>li").eq(next).addClass("current").siblings().removeClass("current");
-      i=next;
-      next++;
-    },3000)
-  }
-  loop(i,i+1);
-  //为指示符绑定事件
-  $(".carousel-indicators>li").hover(
-    function(){
-        var i=$(this).index();
-        clearInterval(timer);
-        task(i);
-    },
-    function(){
-        var i=$(this).index();
-        loop(i,i+1);
-    }
-  )
-  //为左右箭头绑定点击事件
-  $(".carousel>.content>a").click(function(e){
-    e.preventDefault();
-    //清除定时器
-    clearInterval(timer);
-    var i=$(".carousel-inner>li.active").index();//获取当前图片
-    if($(this).hasClass("left")){
-        i--;
-    }else{
-        i++;
-    }
-    if(i<0) i=length;
-    if(i>length) i=0;
-    task(i);
-    //3s后恢复定时器
-    loop(i,i+1);
-  })
-  function task(i){
-    $(".carousel-indicators>li").eq(i).addClass("current")
-    .siblings().removeClass("current");
-    $(".carousel-inner>li").eq(i).addClass("active")
-    .siblings().removeClass("active");
-  }
 })
