@@ -60,6 +60,8 @@ $(function(){
   })
   //3 购物保障图片切换
   $("#Server>.tab-indicators").on("mouseover","li",function(){
+    $(this).find("span").addClass("position-y");
+    $(this).siblings().find("span").removeClass("position-y");
     var id=$(this).attr("data-target");
     $(id).show().siblings().hide();
   })
@@ -90,5 +92,14 @@ $(function(){
   })
   $(".dropdown").on("mouseleave",function(){
     $(this).children().eq(1).hide();
+  })
+  //6 滚动显示tabs
+  $(window).scroll(function(){
+    var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+    if(scrollTop>$(".info-right").children().eq(0).offset().top){
+      $(".info-right").find('.tabs').eq(0).addClass('fixed');
+    }else{
+      $(".info-right").find('.tabs').eq(0).removeClass("fixed");
+    }
   })
 })
