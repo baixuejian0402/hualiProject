@@ -1,5 +1,8 @@
 const express=require('express');
-const pool=require("./pool");
+const indexRouter=require('./routes/index');
+const userRouter=require('./routes/user');
+const productRouter=require('./routes/product.js');
+const cartRouter=require('./routes/cart');
 
 // 创建服务器
 var app=express();
@@ -36,10 +39,8 @@ app.use(bodyParser.urlencoded({
     extended:false
 }));
 
-app.get("/banners",(req,res)=>{
-    var sql="SELECT * FROM huali_index_carousel";
-    pool.query(sql,(err,result)=>{
-        if(err) throw err;
-        res.send(result);
-    });
-})
+//挂载路由到对应路由器
+app.use(indexRouter);
+app.use('/user',userRouter);
+app.use('/product',productRouter);
+app.use('/cart',cartRouter);

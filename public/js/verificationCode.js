@@ -76,3 +76,22 @@ function resetCode () {
     $('#code_img').before('<canvas width="100" height="40" id="verifyCanvas"></canvas>')
     verVal = drawCode();
 }
+
+
+$("#upwd2").blur(function(){
+    var upw1=$("#upwd1").val();
+    var upw2=$("#upwd2").val();
+    if(upw1===upw2){
+        console.log("两次密码一致");
+    }else{
+        console.log("两次密码不一致");
+    }
+})
+$("#btn").click(function(){
+    var code=$("#code").val().toUpperCase();
+    if(code===str){
+        console.log("验证码输入正确");
+    }else{
+        console.log("验证码输入错误");
+    }
+})
