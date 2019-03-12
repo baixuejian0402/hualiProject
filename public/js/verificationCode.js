@@ -8,7 +8,7 @@ var verVal = drawCode();
 function drawCode (str) {
     var canvas = document.getElementById("verifyCanvas"); //获取HTML端画布
     var context = canvas.getContext("2d"); //获取画布2D上下文
-    context.fillStyle = "cornflowerblue"; //画布填充色
+    context.fillStyle = "#FE8034"; //画布填充色
     context.fillRect(0, 0, canvas.width, canvas.height); //清空画布
     context.fillStyle = "white"; //设置字体颜色
     context.font = "25px Arial"; //设置字体
