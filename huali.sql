@@ -239,3 +239,14 @@ INSERT INTO huali_flower VALUES
 (NULL,'不变的承诺--99枝红玫瑰','经典99枝，鼎力推荐！','9012177','99枝红玫瑰','黑色雪梨纸，黑色条纹纸，玻璃纸卷，酒红色缎带花结','下雨的时候，给她撑一把雨伞；寒冷的时候，给她一个温暖的臂弯；天黑了，永远有一盏灯为她点亮；晨起时，给她一缕温暖的阳光。爱她，就送她一束99枝的玫瑰花！','下单填写留言，即免费赠送精美贺卡！','全国 （可配送至全国2000多城市，市区免配送费）','真爱如初',520,150223456789,245,true),
 (NULL,'爱的小确幸--戴安娜粉玫瑰21枝，粉色桔梗5枝，石竹梅7枝','玫瑰平铺设计','9012167','戴安娜粉玫瑰21枝，粉色桔梗5枝，石竹梅7枝','57#魔力铁山灰包装盒','一个人有一种幸福，爱是最简单的音符，啦啦啦~微小确定的幸福！','下单填写留言，即免费赠送精美贺卡！','全国 （可配送至全国2000多城市，市区免配送费）','爱的小确幸',309,150223456789,245,true),
 (NULL,'不变的心--戴安娜玫瑰66枝','','9012055','戴安娜玫瑰66枝 勿忘我适量围绕','内层粉色厚棉纸 外层银灰色短平板印花树叶草 粉紫双色缎带','爱上你是我今生最大的幸福，想你是我最甜蜜的痛苦，和你在一起是我的骄傲。没有你，我就像一只迷失了方向的船。','下单填写留言，即免费赠送精美贺卡！','全国 （可配送至全国2000多城市，市区免配送费）','真爱如初',459,150223456789,245,true);
+
+
+INSERT INTO huali_flower_pic VALUES
+(NULL,1,"img/product_details/sm/9012009.jpg","img/product_details/md/9012009.jpg","img/product_details/lg/9012009.jpg"),
+(NULL,1,"img/product_details/sm/201505161715457343.jpg","img/product_details/md/201505161715457343.jpg","img/product_details/lg/201505161715457343.jpg"),
+(NULL,1,"img/product_details/sm/201505161715590781.jpg","img/product_details/md/201505161715590781.jpg","img/product_details/lg/201505161715590781.jpg"),
+(NULL,1,"img/product_details/sm/201505161716191250.jpg","img/product_details/md/201505161716191250.jpg","img/product_details/lg/201505161716191250.jpg"),
+(NULL,2,"img/product_details/sm/9010947.jpg","img/product_details/md/9010947.jpg","img/product_details/lg/9010947.jpg"),
+(NULL,2,"img/product_details/sm/201901251406233631.jpg","img/product_details/md/201901251406233631.jpg","img/product_details/lg/201901251406233631.jpg"),
+(NULL,2,"img/product_details/sm/201901251441497857.jpg","img/product_details/md/201901251441497857.jpg","img/product_details/lg/201901251441497857.jpg"),
+(NULL,2,"img/product_details/sm/201901251441550394.jpg","img/product_details/md/201901251441550394.jpg","img/product_details/lg/201901251441550394.jpg"),
