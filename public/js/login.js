@@ -16,4 +16,16 @@ $(function(){
             }
         })
     })
+    $(".input_box>input").focus(function(){
+        $(this).parent().next().addClass("info-err");
+    });
+    $(".input_box>input").blur(function(){
+        var con=$(this).val();
+        var reg=/^\w{6,12}$/;
+        if(reg.test(con)){
+            $(this).parent().next().addClass("info-suc");
+        }else{
+            $(this).parent().next().addClass("info-err");
+        }
+    });
 })

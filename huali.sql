@@ -80,15 +80,14 @@ CREATE TABLE huali_shopping_cart(
   cid INT PRIMARY KEY AUTO_INCREMENT,
   uid INT,            #用户编号
   pid INT,            #商品编号
-  buy_count INT,      #购买数量
-  is_checked BOOLEAN   #是否已勾选，确定购买
+  count INT      #购买数量
 );
 
 /**9.订单表**/
 CREATE TABLE huali_order_detail(
   did INT PRIMARY KEY AUTO_INCREMENT,
   pid INT,            #商品编号
-  buy_count INT       #购买数量
+  count INT       #购买数量
 );
 
 /**10.导航条目**/
